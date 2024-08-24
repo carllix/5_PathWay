@@ -1,14 +1,34 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 w-full bg-transparent z-50">
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white" : "bg-transparent"
+      }`}
+    >
       <div className="max-w-full mx-auto py-4 px-4 sm:px-6 lg:px-10">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0">
@@ -39,7 +59,9 @@ export default function Navbar() {
             <a
               href="/lomba"
               className={`text-gray-800 hover:text-gray-600 ${
-                pathname === "/lomba" || pathname === "/beasiswa" ? "font-bold" : ""
+                pathname === "/lomba" || pathname === "/beasiswa"
+                  ? "font-bold"
+                  : ""
               }`}
             >
               Informasi
