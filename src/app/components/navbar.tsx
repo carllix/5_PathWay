@@ -39,7 +39,7 @@ export default function Navbar() {
             <a
               href="/lomba"
               className={`text-gray-800 hover:text-gray-600 ${
-                pathname === "/lomba" ? "font-bold" : ""
+                pathname === "/lomba" || pathname === "/beasiswa" ? "font-bold" : ""
               }`}
             >
               Informasi
