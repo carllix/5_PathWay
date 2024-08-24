@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Poster from "./components/poster";
 import Deskripsi from "./components/deskripsi";
-import Details from "./components/details";
 import Diskusi from "./components/diskusi";
+import Details from "./components/details";
 
 export default function DetailLomba() {
   return (
