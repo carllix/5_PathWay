@@ -24,10 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
-        <Navbar/>
-        {children}
-        <Footer/>
+      <body className={`${poppins.className} flex flex-col min-h-screen`}>
+        <Navbar />
+        <main className="flex-grow pt-16">
+          {" "}
+          {/* pt-16 untuk memberikan ruang di bawah navbar */}
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
