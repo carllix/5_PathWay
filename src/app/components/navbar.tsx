@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-transparent z-50">
-      <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-full mx-auto py-4 px-4 sm:px-6 lg:px-10">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0">
             <a href="/" className="text-2xl font-bold text-gray-800 flex">
