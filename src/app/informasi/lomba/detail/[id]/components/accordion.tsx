@@ -8,9 +8,7 @@ const Accordion = () => {
     <div className="">
       <div
         className={`grid overflow-hidden transition-all duration-300 ease-in-out text-sm ${
-          isOpen
-            ? `grid-rows-[1fr] opacity-100 absolute inset-0`
-            : `grid-rows-[0fr] opacity-0`
+          isOpen ? `grid-rows-[1fr] opacity-100` : `grid-rows-[0fr] opacity-0`
         }`}
       >
         <div className="bg-[#80aae5] rounded-3xl flex justify-between px-4 py-2">

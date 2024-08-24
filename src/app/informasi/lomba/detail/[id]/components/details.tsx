@@ -16,11 +16,19 @@ const Details = () => {
           Daftar
         </button>
       </div>
-      <div>
-        <p className="my-4">Deadline</p>
-        <p className="my-4">Pendaftaran</p>
-        <p className="my-4">Tingkat</p>
-        <p className="my-4">Bidang</p>
+      <div className="grid grid-cols-2">
+        <div>
+          <p className="my-4">Deadline</p>
+          <p className="my-4">Pendaftaran</p>
+          <p className="my-4">Tingkat</p>
+          <p className="my-4">Bidang</p>
+        </div>
+        <div className="font-bold text-end">
+          <p className="my-4">30 September 2024</p>
+          <p className="my-4">Rp150.000,00</p>
+          <p className="my-4">Universitas</p>
+          <p className="my-4">Bisnis</p>
+        </div>
       </div>
       <div className="relative">
         <h1 className="font-extrabold text-3xl">FAQ</h1>
