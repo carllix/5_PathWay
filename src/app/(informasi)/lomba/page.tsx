@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { IoMdSearch } from "react-icons/io";
 import InformasiNavigation from "../components/InformasiNavigation";
@@ -13,7 +13,7 @@ export default function Lomba() {
   const [searchQuery, setSearchQuery] = useState("");
   const [showModal, setShowModal] = useState<boolean>(false);
   const pathname = usePathname();
-  
+
   const openModal = () => {
     setShowModal(true);
   };
@@ -21,6 +21,17 @@ export default function Lomba() {
   const handleSave = () => {
     setShowModal(false);
   };
+
+  useEffect(() => {
+    if (showModal) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [showModal]);
 
   return (
     <div className="mt-12 px-4 sm:px-6 lg:px-10">
@@ -55,21 +66,12 @@ export default function Lomba() {
       </div>
 
       {/* List Lomba */}
-      <div className="px-4 mt6">
-        <p className="py-4">Berikut rekomendasi lomba untuk kamu</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2x1:grid-cols-6 gap-8">
-          <Card
-            title="Lomba 1"
-            description="Deskripsi lomba 1"
-          />
-          <Card
-            title="Lomba 1"
-            description="Deskripsi lomba 1"
-          />
-          <Card
-            title="Lomba 1"
-            description="Deskripsi lomba 1"
-          />
+      <div className="mt-6">
+        <p className="mb-4 text-sm">Berikut rekomendasi lomba untuk kamu</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2x1:grid-cols-6 gap-10">
+          <Card title="Lomba 1" description="Deskripsi lomba 1" />
+          <Card title="Lomba 1" description="Deskripsi lomba 1" />
+          <Card title="Lomba 1" description="Deskripsi lomba 1" />
         </div>
       </div>
 
