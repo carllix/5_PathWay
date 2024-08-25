@@ -21,9 +21,9 @@ const buttonVariants = cva(
           "hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-50",
         link: "text-slate-900 underline-offset-4 hover:underline dark:text-slate-50",
         // Custome Variants
-        blue: "bg-[#4F81C7] text-white text-xs font-normal hover:bg-[#CCE7F7] hover:text-black",
+        blue: "bg-[#4F81C7] text-white text-xs font-normal",
         blue_active:
-          "bg-[#CCE7F7] text-black text-xs font-normal hover:bg-[#4F81C7] hover:text-white",
+          "bg-[#CCE7F7] text-black text-xs font-normal",
         white:
           "bg-white text-[#4F81C7] text-xs font-bold hover:bg-[#4F81C7] hover:text-white",
       },
