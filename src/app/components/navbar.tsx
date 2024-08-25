@@ -6,30 +6,16 @@ import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const isInformasiActive = /^\/(lomba|beasiswa)(\/.*)?$/.test(pathname);
 
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-30 ${
-        isScrolled ? "bg-white" : "bg-transparent"
+        pathname === "/" || pathname === "/about"
+          ? "bg-transparent"
+          : "bg-white"
       }`}
     >
       <div className="max-w-full mx-auto py-4 px-4 sm:px-6 lg:px-10">

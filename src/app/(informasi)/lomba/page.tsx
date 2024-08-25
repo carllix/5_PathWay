@@ -34,7 +34,7 @@ export default function Lomba() {
   }, [showModal]);
 
   return (
-    <div className="mt-12 px-4 sm:px-6 lg:px-10">
+    <div className="mt-28 px-4 sm:px-6 lg:px-10">
       <div className="flex justify-between gap-2 sm:gap-8 md:gap-10">
         {/* Search Bar */}
         <div className="flex w-7/12 items-center justify-between rounded-lg bg-[#F0D78C] py-2 px-3">
