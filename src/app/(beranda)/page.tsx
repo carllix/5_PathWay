@@ -1,57 +1,19 @@
 export default function Beranda() {
   return (
-    <div style={{ 
-      position: 'relative', 
-      width: '100%', 
-      height: '100vh', 
-      overflow: 'hidden'
-    }}>
-
-      <style>
-      {`
-        @font-face {
-          font-family: 'AllRight';
-          src: url('/fonts/allright.ttf') format('truetype');
-          font-weight: normal;
-          font-style: normal;
-        }
-      `}
-      </style>
-
+    <div className="relative w-full h-screen overflow-hidden">
+      
       <img 
         src="/image-beranda.svg" 
         alt="Beranda"
-        style={{ 
-          width: '100%',
-          height: '100%',
-          position: 'absolute',
-          objectFit: 'cover',
-          maxWidth: '100%',
-        }}
+        className="absolute w-full h-full object-cover"
+      />
+
+      <div className="absolute top-[42%] left-[35%] transform -translate-x-1/2 -translate-y-1/2">
+        <img 
+          src="/Welcome to PathWay.svg" 
+          alt="Title" 
+          className="w-[1100px] h-[1100px] max-w-full"
         />
-
-      <div style={{
-        position: 'absolute',
-        top: '200px',
-        left: '150px',
-        color: 'white',
-        fontSize: '150px',
-        textShadow: '-2px 4px 4px rgba(0, 0, 0, 0.2)',
-        fontFamily: 'allright'
-      }}>
-        Welcome to
-      </div>
-
-      <div style={{
-        position: 'absolute',
-        top: '450px',
-        left: '150px',
-        color: 'white',
-        fontSize: '300px',
-        textShadow: '-2px 4px 4px rgba(0, 0, 0, 0.2)',
-        fontFamily: 'allright'
-      }}>
-        PathWay
       </div>
 
     </div>
