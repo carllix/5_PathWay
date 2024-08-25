@@ -68,7 +68,7 @@ export default function Lomba() {
       {/* List Lomba */}
       <div className="mt-6">
         <p className="mb-4 text-sm">Berikut rekomendasi lomba untuk kamu</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2x1:grid-cols-6 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2x1:grid-cols-5 gap-10">
           <Card title="Lomba 1" description="Deskripsi lomba 1" />
           <Card title="Lomba 1" description="Deskripsi lomba 1" />
           <Card title="Lomba 1" description="Deskripsi lomba 1" />
