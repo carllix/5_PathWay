@@ -8,7 +8,7 @@ export default function Beranda() {
         className="absolute w-full h-full object-cover"
       />
 
-      <div className="absolute top-[42%] left-[35%] transform -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute top-[52%] left-[35%] transform -translate-x-1/2 -translate-y-1/2">
         <img 
           src="/Welcome to PathWay.svg" 
           alt="Title" 
