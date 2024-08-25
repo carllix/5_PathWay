@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaTwitter, FaWhatsapp, FaInstagram } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -8,26 +9,26 @@ export default function Footer() {
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row justify-between items-start">
         <div className="flex flex-col md:flex-row items-start mb-4 md:mb-0">
           <div className="flex-shrink-0">
-            <a href="/" className="text-2xl font-bold flex">
+            <Link href="/" className="text-2xl font-bold flex">
               <Image
-                src={"name-pathway.svg"}
+                src="/name-pathway.svg"
                 alt="logo"
                 width={100}
                 height={40}
               />
               <Image
-                src={"logo-pathway.svg"}
+                src="/logo-pathway.svg"
                 alt="logo"
                 width={40}
                 height={40}
               />
-            </a>
+            </Link>
           </div>
           <div className="mt-4 md:mt-0 md:ml-8">
             <div className="mb-2">
-              <a href="/about" className="block text-black hover:underline">
+              <Link href="/about" className="block text-black hover:underline">
                 <b>Tentang Kita</b>
-              </a>
+              </Link>
             </div>
             <div className="flex space-x-4">
               <a

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,8 @@ export default function Navbar() {
     };
   }, []);
 
+  const isInformasiActive = /^\/(lomba|beasiswa)(\/.*)?$/.test(pathname);
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -32,7 +35,7 @@ export default function Navbar() {
       <div className="max-w-full mx-auto py-4 px-4 sm:px-6 lg:px-10">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0">
-            <a href="/" className="text-2xl font-bold text-gray-800 flex">
+            <Link href="/" className="text-2xl font-bold text-gray-800 flex">
               <Image
                 src="/name-pathway.svg"
                 alt="logo"
@@ -45,35 +48,33 @@ export default function Navbar() {
                 width={40}
                 height={40}
               />
-            </a>
+            </Link>
           </div>
           <div className="hidden md:flex space-x-4">
-            <a
+            <Link
               href="/"
               className={`text-gray-800 hover:text-gray-600 ${
                 pathname === "/" ? "font-bold" : ""
               }`}
             >
               Beranda
-            </a>
-            <a
+            </Link>
+            <Link
               href="/lomba"
               className={`text-gray-800 hover:text-gray-600 ${
-                pathname === "/lomba" || pathname === "/beasiswa"
-                  ? "font-bold"
-                  : ""
+                isInformasiActive ? "font-bold" : ""
               }`}
             >
               Informasi
-            </a>
-            <a
+            </Link>
+            <Link
               href="/about"
               className={`text-gray-800 hover:text-gray-600 ${
                 pathname === "/about" ? "font-bold" : ""
               }`}
             >
               Tentang Kita
-            </a>
+            </Link>
           </div>
           <div className="md:hidden">
             <button
@@ -100,31 +101,31 @@ export default function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden flex flex-col items-center bg-white">
-          <a
+        <div className="md:hidden flex flex-col items-center bg-white pb-5">
+          <Link
             href="/"
             className={`py-2 text-gray-800 hover:text-gray-600 ${
               pathname === "/" ? "font-bold" : ""
             }`}
           >
             Beranda
-          </a>
-          <a
+          </Link>
+          <Link
             href="/lomba"
             className={`py-2 text-gray-800 hover:text-gray-600 ${
-              pathname === "/lomba" ? "font-bold" : ""
+              isInformasiActive ? "font-bold" : ""
             }`}
           >
             Informasi
-          </a>
-          <a
+          </Link>
+          <Link
             href="/about"
             className={`py-2 text-gray-800 hover:text-gray-600 ${
               pathname === "/about" ? "font-bold" : ""
             }`}
           >
             Tentang Kita
-          </a>
+          </Link>
         </div>
       )}
     </nav>
