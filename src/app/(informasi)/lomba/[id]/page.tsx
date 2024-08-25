@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function DetailLomba() {
   return (
-    <div className="mt-12 px-4 sm:px-6 lg:px-10">
+    <div className="mt-28 px-4 sm:px-6 lg:px-10">
       <Link href="/lomba" className="text- flex gap-2">
         <Image src="/back.svg" alt="back" width={20} height={20} />
         Kembali
