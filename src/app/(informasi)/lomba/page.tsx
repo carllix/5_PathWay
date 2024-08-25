@@ -7,6 +7,7 @@ import { IoMdSearch } from "react-icons/io";
 import InformasiNavigation from "../components/InformasiNavigation";
 import ModalLombaFilter from "../components/ModalLombaFilter";
 import { usePathname } from "next/navigation";
+import Card from "../components/Card";
 
 export default function Lomba() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -22,8 +23,8 @@ export default function Lomba() {
   };
 
   return (
-    <div className="mt-12 px-4">
-      <div className="mx-4 flex justify-between gap-2 sm:gap-8 md:gap-10">
+    <div className="mt-12 px-4 sm:px-6 lg:px-10">
+      <div className="flex justify-between gap-2 sm:gap-8 md:gap-10">
         {/* Search Bar */}
         <div className="flex w-7/12 items-center justify-between rounded-lg bg-[#F0D78C] py-2 px-3">
           <input
@@ -54,7 +55,6 @@ export default function Lomba() {
       </div>
 
       {/* List Lomba */}
-
 
       {showModal && (
         <div>
