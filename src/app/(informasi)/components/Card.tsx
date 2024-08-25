@@ -8,7 +8,7 @@ export default function Card({
     description: string;
 }) {
     return (
-        <div className="flex flex-col rounded-lg shadow-md p-4 bg-[#CCE7F7]">
+        <div className="flex flex-col rounded-lg shadow-md p-4 bg-[#CCE7F7] max-w-xs ">
             <Image 
                 src="/information-details.jpg" 
                 alt="poster" 
