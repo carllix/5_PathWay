@@ -1,66 +1,27 @@
-"use client";
-
-import { useState, useLayoutEffect } from "react";
+import Image from "next/image";
 
 export default function About() {
-
-  const [paragraphSize, setParagraphSize] = useState({
-    fontSize: '30px',
-  });
-
-  useLayoutEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 800) {
-        setParagraphSize({
-          fontSize: '20px',
-        });
-      } else {
-        setParagraphSize({
-          fontSize: '30px',
-        });
-      }
-    };
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      
-      <img 
-        src="/image-about.svg" 
-        alt="Background"
-        className="absolute w-full h-full object-cover"
+    <div className="relative w-full h-screen xl:h-full overflow-hidden">
+      <div className="absolute w-full h-full bg-black opacity-30 z-0"></div>
+      <Image
+        src="/bg-about.svg"
+        alt="About"
+        width={1280}
+        height={832}
+        className="w-full h-full object-cover"
       />
-
-      <div className="absolute top-0 left-0 w-full h-full bg-[#f0d78c] opacity-70 mix-blend-overlay pointer-events-none"></div>
-
-      <div className="absolute top-[25%] left-[41%] transform -translate-x-1/2 text-white text-center">
-        <img 
-          src="/About Pathway.svg" 
-          alt="About Pathway"
-          className="w-[1000px] h-auto max-w-full"
-        />
+      <div className="absolute flex items-center gap-5 top-44 left-8 sm:left-20 lg:top-44 2xl:top-56 lg:left-28 font-allright text-white">
+        <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">About</p>
+        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl">PathWay</p>
       </div>
-
-      <div 
-        className="absolute top-[55%] left-[45%] translate-x-[-50%] w-[60%] text-white text-center"
-        style={{
-          fontSize: paragraphSize.fontSize,
-          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
-        }}
-      >
-
-        <p className="text-justify">
-          PathWay adalah platform digital yang dirancang khusus untuk memenuhi kebutuhan mahasiswa 
-          dalam mencari informasi penting secara efisien. Kami memahami betapa pentingnya akses 
-          terhadap informasi yang akurat dan terpusat, terutama terkait lomba, beasiswa, dan peluang 
-          lainnya yang dapat mendukung perjalanan akademik dan karier mahasiswa.
-        </p>
-      </div>
+      <p className="absolute z-50 top-64 left-8 sm:left-20 sm:top-[270px] md:top-[290px] lg:top-80 2xl:top-96 lg:left-28 text-white text-sm md:text-base lg:text-lg 2xl:text-xl text-justify font-light w-4/5 sm:w-3/4 lg:w-2/3 2xl:w-1/2 leading-6">
+        PathWay adalah platform digital yang dirancang khusus untuk memenuhi
+        kebutuhan mahasiswa dalam mencari informasi penting secara efisien. Kami
+        memahami betapa pentingnya akses terhadap informasi yang akurat dan
+        terpusat, terutama terkait lomba, beasiswa, dan peluang lainnya yang
+        dapat mendukung perjalanan akademik dan karier mahasiswa.
+      </p>
     </div>
   );
 }
