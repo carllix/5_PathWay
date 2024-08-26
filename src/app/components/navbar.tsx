@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -13,9 +14,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-30 ${
-        pathname === "/" || pathname === "/about"
-          ? "bg-transparent"
-          : "bg-white"
+        isInformasiActive || isOpen ? "bg-white" : "bg-transparent"
       }`}
     >
       <div className="max-w-full mx-auto py-4 px-4 sm:px-6 lg:px-10">
@@ -87,7 +86,7 @@ export default function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden flex flex-col items-center bg-white pb-5">
+        <div className={`md:hidden flex flex-col items-center pb-5 bg-white`}>
           <Link
             href="/"
             className={`py-2 text-gray-800 hover:text-gray-600 ${
