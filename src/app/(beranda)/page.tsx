@@ -1,21 +1,18 @@
+import Image from "next/image";
 export default function Beranda() {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      
-      <img 
-        src="/image-beranda.svg" 
+    <div className="relative w-full h-screen xl:h-full overflow-hidden">
+      <Image
+        src="/image-beranda.svg"
         alt="Beranda"
-        className="absolute w-full h-full object-cover"
+        width={1280}
+        height={832}
+        className="w-full h-full object-cover"
       />
-
-      <div className="absolute top-[52%] left-[35%] transform -translate-x-1/2 -translate-y-1/2">
-        <img 
-          src="/Welcome to PathWay.svg" 
-          alt="Title" 
-          className="w-[1100px] h-[1100px] max-w-full"
-        />
+      <div className="absolute top-64 left-10 sm:left-20 lg:top-44 2xl:top-56 lg:left-28 font-allright text-white">
+        <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Welcome to</p>
+        <p className="mt-6 lg:mt-12 text-7xl sm:text-8xl md:text-9xl lg:text-[150px]">PathWay</p>
       </div>
-
     </div>
   );
 }
