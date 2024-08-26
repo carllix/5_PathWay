@@ -57,7 +57,7 @@ export default function Lomba() {
           onClick={openModal}
         >
           <Image
-            src="/informasi/icon-filter.png"
+            src="/icon-filter.png"
             alt="filter"
             width={20}
             height={20}
