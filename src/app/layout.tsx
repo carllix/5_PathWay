@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { allright, poppins } from "./fonts";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
 
 export const metadata: Metadata = {
   title: "PathWay",
@@ -23,12 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${poppins.className} flex flex-col min-h-screen`}>
+    <html lang="en" className={`${poppins.variable} ${allright.variable}`}>
+      <body>
         <Navbar />
-        <main className="flex-grow">
-          {children}
-        </main>
+        {children}
         <Footer />
       </body>
     </html>
