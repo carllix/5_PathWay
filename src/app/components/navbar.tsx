@@ -1,20 +1,35 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
   const isInformasiActive = /^\/(lomba|beasiswa)(\/.*)?$/.test(pathname);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-30 ${
-        isInformasiActive || isOpen ? "bg-white" : "bg-transparent"
+      className={`fixed top-0 left-0 w-full z-50 ${
+        isInformasiActive || isOpen || isScrolled ? "bg-white" : "bg-transparent"
       }`}
     >
       <div className="max-w-full mx-auto py-4 px-4 sm:px-6 lg:px-10">

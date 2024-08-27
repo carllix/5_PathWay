@@ -15,7 +15,7 @@ export default function About() {
         <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">About</p>
         <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl">PathWay</p>
       </div>
-      <p className="absolute z-50 top-64 left-8 sm:left-20 sm:top-[270px] md:top-[290px] lg:top-80 2xl:top-96 lg:left-28 text-white text-sm md:text-base lg:text-lg 2xl:text-xl text-justify font-light w-4/5 sm:w-3/4 lg:w-2/3 2xl:w-1/2 leading-6">
+      <p className="absolute z-30 top-64 left-8 sm:left-20 sm:top-[270px] md:top-[290px] lg:top-80 2xl:top-96 lg:left-28 text-white text-sm md:text-base lg:text-lg 2xl:text-xl text-justify font-light w-4/5 sm:w-3/4 lg:w-2/3 2xl:w-1/2 leading-6">
         PathWay adalah platform digital yang dirancang khusus untuk memenuhi
         kebutuhan mahasiswa dalam mencari informasi penting secara efisien. Kami
         memahami betapa pentingnya akses terhadap informasi yang akurat dan
