@@ -10,6 +10,7 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
+  const noNavbarRoutes = ["/login", "/signup"];
   const isInformasiActive = /^\/(lomba|beasiswa)(\/.*)?$/.test(pathname);
 
   useEffect(() => {
@@ -26,6 +27,10 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  if (noNavbarRoutes.includes(pathname)) {
+    return null;
+  }
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-40 ${

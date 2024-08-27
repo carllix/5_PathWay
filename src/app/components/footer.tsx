@@ -1,9 +1,18 @@
+"use client";	
+
 import React from "react";
 import Image from "next/image";
 import { FaTwitter, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+  const noFooterRoutes = ["/login", "/signup"];
+
+  if (noFooterRoutes.includes(pathname)) {
+    return null;
+  }
   return (
     <footer className="bg-white text-black py-8">
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row justify-between items-start">
