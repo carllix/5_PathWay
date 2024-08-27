@@ -1,43 +1,49 @@
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 export default function Signup() {
   return (
-    <div className="flex h-screen justify-center items-center bg-[#4F81C7]">
-      <div className="flex flex-col items-center w-7/12 sm:w-1/2 lg:w-5/12">
-        {/* Judul Sign Up */}
-        <p className="mb-6 text-[#F0D78C] text-3xl font-bold">
-          Silakan Sign Up!
-        </p>
+    <div className="flex flex-col gap-5 text-center items-center justify-center min-h-screen bg-[#4F81C7] font-bold">
+      {/* Judul Sign Up */}
+      <p className="text-xl sm:text-2xl lg:text-3xl text-[#F0D78C] mb-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.3)]">
+        Silakan Sign Up!
+      </p>
 
-        {/* Container Input Field */}
-        <div className="flex flex-col w-full space-y-3">
-          {/* Input Username */}
-          <input
-            type="text"
-            placeholder="Masukkan username"
-            className="w-full rounded-full bg-[#CCE7F7] py-3 px-4 text-sm placeholder-gray-450 focus:outline-none"
-          />
-          {/* Input Email */}
-          <input
-            type="email"
-            placeholder="Masukkan alamat email"
-            className="w-full rounded-full bg-[#CCE7F7] py-3 px-4 text-sm placeholder-gray-450 focus:outline-none"
-          />
-          {/* Input Password */}
-          <input
-            type="password"
-            placeholder="Masukkan kata sandi"
-            className="w-full rounded-full bg-[#CCE7F7] py-3 px-4 text-sm placeholder-gray-450 focus:outline-none"
-          />
-        </div>
-        {/* Button Sign Up */}
-        <button className="mt-6 w-[170px] rounded-full bg-[#F0D78C] text-[#4F81C7] py-3 text-m font-semibold">
-          Sign Up
-        </button>
+      {/* Container Input Field */}
 
-        {/* Login jika sudah punya akun*/}
-        <p className="mt-9 text-sm text-[#F0D78C] ">
-          Sudah punya akun? <a href="#" className="text-[#F0D78C] underline">Log in</a>
-        </p>
-      </div>
+      {/* Input Username */}
+      <input
+        className="rounded-2xl w-5/6 max-w-md p-3 text-xs text-[#8E8E93] font-normal bg-[#CCE7F7]"
+        type="text"
+        placeholder="Masukkan username"
+      />
+      {/* Input Email */}
+      <input
+        className="rounded-2xl w-5/6 max-w-md p-3 text-xs text-[#8E8E93] font-normal bg-[#CCE7F7]"
+        type="text"
+        placeholder="Masukkan alamat email"
+      />
+      {/* Input Password */}
+      <input
+        className="rounded-2xl w-5/6 max-w-md p-3 text-xs text-[#8E8E93] font-normal bg-[#CCE7F7]"
+        type="text"
+        placeholder="Masukkan kata sandi"
+      />
+      {/* Button Sign Up */}
+      <Button
+        variant="yellow"
+        className="w-20 h-8 sm:w-24 sm:h-9 lg:w-28 lg:h-10 rounded-xl"
+      >
+        <Link href="/">Sign Up</Link>
+      </Button>
+
+      {/* Login jika sudah punya akun*/}
+      <p className="text-[#F0D78C] text-sm sm:text-base lg:text-lg mt-4">
+        Sudah punya akun?{" "}
+        <Link href="/login" className="underline">
+          Log in
+        </Link>
+      </p>
     </div>
   );
 }
