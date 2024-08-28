@@ -1,5 +1,4 @@
 import React from "react";
-import Accordion from "./accordion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -7,7 +6,7 @@ interface DetailsProps {
   title: string;
   organizer: string;
   contactLink: string;
-  reagistrationLink: string;
+  registrationLink: string;
   deadline: string;
   registrationFee: string;
   level: string;
@@ -17,7 +16,7 @@ export default function Details({
   title,
   organizer,
   contactLink,
-  reagistrationLink,
+  registrationLink,
   deadline,
   registrationFee,
   level,
@@ -32,7 +31,7 @@ export default function Details({
           <Link href={contactLink}>Narahubung</Link>
         </Button>
         <Button className="font-semibold h-10 p-4 bg-[#4F81C7] rounded-xl text-white hover:bg-blue-900">
-          <Link href={reagistrationLink}>Daftar</Link>
+          <Link href={registrationLink}>Daftar</Link>
         </Button>
       </div>
       <div className="grid grid-cols-2 text-sm">
@@ -49,12 +48,14 @@ export default function Details({
           <p>{category}</p>
         </div>
       </div>
-      <div className="relative mt-8">
+      {/* <div className="relative mt-6">
         <h1 className="font-extrabold text-xl">FAQ</h1>
-        <div>
-          <Accordion />
+        <div className="mt-4 flex flex-col gap-2">
+          <Accordion title="FAQ 1" content="Lorem Ipsum Dolor Sit Amet" />
+          <Accordion title="FAQ 2" content="Lorem Ipsum Dolor Sit Amet" />
+          <Accordion title="FAQ 3" content="Lorem Ipsum Dolor Sit Amet" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

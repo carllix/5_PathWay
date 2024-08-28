@@ -3,7 +3,7 @@ import React from "react";
 
 const Diskusi = () => {
   return (
-    <div className="my-4">
+    <div className="mt-10">
       <h1 className="font-extrabold text-xl">Forum Diskusi</h1>
 
       <textarea

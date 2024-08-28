@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
-
 import { IoMdSearch } from "react-icons/io";
 import { IoFilter } from "react-icons/io5";
 import InformasiNavigation from "../components/InformasiNavigation";
