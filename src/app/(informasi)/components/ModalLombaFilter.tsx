@@ -1,25 +1,10 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
-const bidang = [
-  "IT",
-  "Bisnis",
-  "Essay",
-  "Poster",
-  "Videografi",
-];
-const tingkat = [
-  "Universitas",
-  "Kota/Kabupaten",
-  "Provinsi",
-  "Nasional",
-  "Internasional",
-];
-const pelaksanaan = ["Daring", "Luring", "Hybrid"];
-const anggota = ["Individu", "Kelompok"];
+const bidang = ["IT", "Bisnis", "Essay", "Poster", "Videografi"];
 
 interface ModalLombaFilterProps {
-  handleSave: () => void;
+  handleSave: (selectedBidang: string[]) => void;
 }
 
 const Kategori = ({
@@ -55,20 +40,13 @@ export default function ModalLombaFilter({
   handleSave,
 }: ModalLombaFilterProps) {
   const [selectedBidang, setSelectedBidang] = useState<string[]>([]);
-  const [selectedTingkat, setSelectedTingkat] = useState<string[]>([]);
-  const [selectedPelaksanaan, setSelectedPelaksanaan] = useState<string[]>([]);
-  const [selectedAnggota, setSelectedAnggota] = useState<string[]>([]);
 
-  const toggleSelection = (
-    selectedValues: string[],
-    setSelectedValues: React.Dispatch<React.SetStateAction<string[]>>,
-    value: string
-  ) => {
-    if (selectedValues.includes(value)) {
-      setSelectedValues(selectedValues.filter((item) => item !== value));
-    } else {
-      setSelectedValues([...selectedValues, value]);
-    }
+  const toggleSelection = (value: string) => {
+    setSelectedBidang((prev) =>
+      prev.includes(value)
+        ? prev.filter((item) => item !== value)
+        : [...prev, value]
+    );
   };
 
   return (
@@ -77,36 +55,14 @@ export default function ModalLombaFilter({
         title="Bidang"
         values={bidang}
         selectedValues={selectedBidang}
-        toggleValue={(value) =>
-          toggleSelection(selectedBidang, setSelectedBidang, value)
-        }
-      />
-      <Kategori
-        title="Tingkat"
-        values={tingkat}
-        selectedValues={selectedTingkat}
-        toggleValue={(value) =>
-          toggleSelection(selectedTingkat, setSelectedTingkat, value)
-        }
-      />
-      <Kategori
-        title="Pelaksanaan"
-        values={pelaksanaan}
-        selectedValues={selectedPelaksanaan}
-        toggleValue={(value) =>
-          toggleSelection(selectedPelaksanaan, setSelectedPelaksanaan, value)
-        }
-      />
-      <Kategori
-        title="Anggota"
-        values={anggota}
-        selectedValues={selectedAnggota}
-        toggleValue={(value) =>
-          toggleSelection(selectedAnggota, setSelectedAnggota, value)
-        }
+        toggleValue={toggleSelection}
       />
       <div className="flex justify-center mt-6">
-        <Button variant="white" className="text-xs" onClick={handleSave}>
+        <Button
+          variant="white"
+          className="text-xs"
+          onClick={() => handleSave(selectedBidang)}
+        >
           Simpan Perubahan
         </Button>
       </div>

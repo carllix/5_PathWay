@@ -1,0 +1,62 @@
+id,jenis,tanggal_pendaftaran,deadline_pendaftaran,tingkat,lembaga_penyelenggara,syarat_ketentuan,totaluang_beasiswa,more_info
+1,Beasiswa Tanoto Foundation,01-02-2024,31-03-2024,"S1, S2",Tanoto Foundation,"IPK minimal 3.5, Mahasiswa aktif, Tergabung dalam organisasi",Rp 24.000.000/tahun,beasiswa@tanotofoundation.org
+2,Beasiswa Karya Salemba Empat,01-03-2024,30-04-2024,S1,Yayasan Karya Salemba Empat,"Mahasiswa aktif, IPK minimal 3.0, Terlibat kegiatan sosial",Rp 7.000.000/tahun,info@karyasalemba4.org
+3,Beasiswa Pertamina Sobat Bumi,01-01-2024,15-03-2024,"S1, S2",Pertamina Foundation,"Mahasiswa aktif, Minat dalam lingkungan, IPK minimal 3.0",Rp 18.000.000/tahun,sobatbumi@pertaminafoundation.org
+3,Beasiswa CIMB ASEAN Scholarship,01-02-2024,31-03-2024,S1,CIMB Group,"Mahasiswa aktif, GPA minimal 3.5, TOEFL/IELTS diperlukan",USD 15.000/tahun,scholarship@cimb.com
+4,Beasiswa Jardine Foundation,01-03-2024,31-05-2024,"S1, S2",Jardine Foundation,"Prestasi akademik, Minat dalam leadership, TOEFL/IELTS",Full tuition + biaya hidup,info@jardine-foundation.org
+5,Beasiswa Gates Cambridge,01-04-2024,31-07-2024,"S2, S3",University of Cambridge,"GPA minimal 3.7, TOEFL/IELTS, Proposal penelitian",GBP 50.000/tahun,admissions@gatescambridge.org
+6,Beasiswa Orange Tulip,15-01-2024,15-04-2024,"S1, S2",Nuffic Neso Indonesia,"Prestasi akademik, GPA minimal 3.0, Surat rekomendasi",EUR 25.000/tahun,orangetulip@nesoindonesia.or.id
+7,Beasiswa Monbukagakusho,01-05-2024,31-07-2024,"S1, S2, S3",Pemerintah Jepang,"Mahasiswa aktif, GPA minimal 3.2, Kemampuan bahasa Jepang",JPY 1.200.000/bulan,beasiswa@id.emb-japan.go.jp
+8,Beasiswa Eiffel Excellence,01-06-2024,31-08-2024,"S1, S2",Pemerintah Perancis,"Mahasiswa aktif, GPA minimal 3.7, TOEFL/IELTS",EUR 10.000/tahun,eiffel@campusfrance.org
+9,Beasiswa Australia Awards,01-02-2024,30-04-2024,"S2, S3",Pemerintah Australia,"GPA minimal 3.0, Komitmen kembali ke negara asal",AUD 30.000/tahun,awards@dfat.gov.au
+10,Beasiswa DAAD,01-03-2024,31-05-2024,"S2, S3",Pemerintah Jerman,"GPA minimal 3.2, Proposal penelitian, Kemampuan bahasa",EUR 20.000/tahun,daad@daad.de
+11,Beasiswa Amgen Scholars,01-07-2024,31-08-2024,S1,Amgen Foundation,"Mahasiswa aktif, GPA minimal 3.5, Minat penelitian",USD 10.000/tahun,scholars@amgen.com
+12,Beasiswa Gates Millenium,01-08-2024,31-10-2024,"S1, S2",Bill & Melinda Gates Foundation,"Mahasiswa aktif, GPA minimal 3.3, TOEFL/IELTS diperlukan",USD 12.000/tahun,scholarships@gatesfoundation.org
+13,Beasiswa INPEX Scholarship,01-09-2024,31-10-2024,"S2, S3",INPEX Corporation,"GPA minimal 3.5, Mahasiswa teknik, Kemampuan bahasa Jepang",JPY 1.500.000/bulan,scholarship@inpex.co.jp
+14,Beasiswa New Zealand Aid,01-10-2024,31-12-2024,"S1, S2, S3",Pemerintah New Zealand,"GPA minimal 3.0, Komitmen kembali ke negara asal",NZD 20.000/tahun,nzscholarships@mfat.govt.nz
+15,Beasiswa Beasiswa Anak Bangsa,01-02-2024,31-03-2024,S1,Yayasan Anak Bangsa,"IPK minimal 3.2, Mahasiswa aktif",Rp 15.000.000/tahun,info@yayasananakbangsa.org
+16,Beasiswa Tokopedia Scholarship,01-04-2024,31-05-2024,"S1, S2",Tokopedia Foundation,"IPK minimal 3.5, Minat dalam teknologi dan inovasi",Rp 25.000.000/tahun,beasiswa@tokopedia.com
+17,Beasiswa Astra1st,01-05-2024,31-07-2024,S1,Astra International,"IPK minimal 3.5, Mahasiswa aktif, Minat dalam leadership",Rp 10.000.000/tahun,astra1st@astra.co.id
+18,Beasiswa Cargill Global Scholars,01-06-2024,31-08-2024,"S1, S2",Cargill Foundation,"Mahasiswa aktif, GPA minimal 3.5, Proposal penelitian",USD 5.000/tahun,scholars@cargill.com
+19,Beasiswa Beasiswa PT Pama,01-07-2024,31-08-2024,S1,PT Pamapersada Nusantara,"Mahasiswa aktif, IPK minimal 3.0, Terlibat kegiatan sosial",Rp 8.000.000/tahun,scholarship@ptpama.com
+20,Beasiswa Maybank Foundation,01-08-2024,30-09-2024,S1,Maybank Foundation,"IPK minimal 3.3, Mahasiswa aktif, Minat dalam ekonomi dan keuangan",Rp 12.000.000/tahun,beasiswa@maybankfoundation.org
+21,Beasiswa Shell Scholarship,01-09-2024,31-10-2024,"S1, S2",Shell Global,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+22,Beasiswa Internasional,01-10-2024,31-01-2025,S1,Erasmus Mundus,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+23,Beasiswa Internasional,01-02-2024,31-01-2025,S1,Fullbright program,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+24,Beasiswa Internasional,01-02-2024,31-01-2025,S1,Australia Award,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+25,Beasiswa Internasional,01-02-2024,31-01-2025,S1,MEXT Scholarship,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+26,Beasiswa Internasional,01-02-2024,31-01-2025,S1,Vanier Canada,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+27,Beasiswa Pemerintah,01-02-2024,31-01-2025,S1,Swedish Institute,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+28,Beasiswa Pemerintah,01-02-2024,31-01-2025,S1,Vanier Canada Graduate Scholarships,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+29,Beasiswa Pemerintah,01-02-2024,31-01-2025,S1,Clarendon Fund Scholarships,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+30,Beasiswa Pengembangan Karir,01-02-2024,31-01-2025,S1,Google Anita Borg Memorial Scholarship,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+31,Beasiswa Pendidikan Tinggi,01-02-2024,31-01-2025,S1,Daad Sholarsip,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+32,Beasiswa Pendidikan Tinggi,01-02-2024,31-01-2025,S1,Australia Awards Scholarships,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+33,Beasiswa Pendidikan Tinggi,01-02-2024,31-01-2025,S1,Gates Millennium Scholars Program,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+34,Beasiswa Pendidikan Tinggi,01-02-2024,31-01-2025,S1,Gates Millennium Scholars Program,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+35,Beasiswa Pendidikan Tinggi,01-02-2024,31-01-2025,S1,Gates Millennium Scholars Program,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+36,Beasiswa Pengabdian Masyarakat,01-02-2024,31-01-2025,S1,Gates Millennium Scholars Program,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+37,Beasiswa Pengabdian Masyarakat,01-02-2024,31-01-2025,S1,Gates Millennium Scholars Program,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+38,Beasiswa Pengabdian Masyarakat,01-02-2024,31-01-2025,S1,Gates Millennium Scholars Program,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+39,Beasiswa Pengabdian Masyarakat,01-02-2024,31-01-2025,S1,Gates Millennium Scholars Program,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+40,Beasiswa Pengabdian Masyarakat,01-02-2024,31-01-2025,S1,,"Mahasiswa teknik atau sains, GPA minimal 3.5, TOEFL/IELTS",USD 20.000/tahun,shell.scholarships@shell.com
+41,Beasiswa Pendidikan,01-01-2024,31-01-2024,"S1, S2, S3",Lembaga Pengelola Dana Pendidikan (LPDP),"Warga negara Indonesia, IPK min 3.00",Rp 50.000.000 - Rp 100.000.000,lpdp@kemendikbud.go.id
+42,Beasiswa Prestasi,01-02-2024,28-02-2024,S1,Universitas Indonesia,"Prestasi akademik dan non-akademik, IPK min 3.00",Rp 10.000.000,beasiswa@ui.ac.id
+43,Beasiswa Magister,01-03-2024,31-03-2024,S2,Fulbright Program,Mahasiswa dengan prestasi akademik dan rekomendasi,USD 50.000,fulbright@state.gov
+44,Beasiswa Internasional,15-01-2024,15-03-2024,"S1, S2, S3",Erasmus Mundus,"IPK min 3.00, kemampuan bahasa Inggris",EUR 15.000 - EUR 50.000,info@erasmusmundus.org
+45,Beasiswa Beasiswa Pemerintah,01-04-2024,30-04-2024,S1,Pemerintah Jepang,"Warga negara Indonesia, nilai akademik baik, tes bahasa",JPY 1.000.000,info@japanembassy.org
+46,Beasiswa Profesional,01-05-2024,31-05-2024,"S2, S3",Chevening,"Prestasi akademik, pengalaman kerja, wawancara",GBP 18.000,chevening@britishcouncil.org
+47,Beasiswa Pendidikan Tinggi,10-05-2024,30-06-2024,"S1, S2",Australia Awards,"IPK min 3.00, komitmen untuk kembali ke negara asal",AUD 30.000,awards@australiangovernment.gov.au
+48,Beasiswa Penelitian,01-06-2024,31-07-2024,S3,National Science Foundation,"Proposal penelitian, riwayat akademik, publikasi",USD 75.000,nsf@nsf.gov
+49,Beasiswa Pendidikan Tinggi,01-07-2024,31-08-2024,"S1, S2",Harvard University,"Prestasi akademik, kemampuan bahasa Inggris",USD 40.000,admissions@harvard.edu
+50,Beasiswa Olahraga,01-08-2024,30-09-2024,S1,Olympic Solidarity,"Prestasi olahraga, akademik baik",USD 20.000,info@olympics.org
+51,Beasiswa Seni,01-09-2024,31-10-2024,"S1, S2",Getty Foundation,"Karya seni, portofolio, prestasi seni",USD 25.000,info@gettyfoundation.org
+52,Beasiswa Teknologi,01-10-2024,30-11-2024,"S1, S2",Google Scholarship Program,"IPK min 3.00, kemampuan teknis",USD 10.000,google.scholarships@google.com
+53,Beasiswa Mahasiswa Berprestasi,01-11-2024,15-12-2024,S1,Kementerian Pendidikan dan Kebudayaan,"Prestasi akademik, partisipasi kegiatan",Rp 5.000.000,kemendikbud@kemendikbud.go.id
+54,Beasiswa Kepemimpinan,01-01-2024,31-01-2024,S2,Young Southeast Asian Leaders Initiative (YSEALI),"Pengalaman kepemimpinan, prestasi akademik",USD 12.000,yseali@state.gov
+55,Beasiswa Inovasi,01-02-2024,28-02-2024,"S1, S2",Massachusetts Institute of Technology (MIT) Innovation,"Proposal inovasi, rekam jejak akademik dan profesional",USD 15.000,innovation@mit.edu
+56,Beasiswa Pengabdian Masyarakat,01-03-2024,31-03-2024,"S1, S2",Community Foundation,"Kegiatan pengabdian masyarakat, prestasi akademik",Rp 7.500.000,community@foundation.org
+57,Beasiswa Pengembangan Karir,01-04-2024,30-04-2024,"S2, S3",LinkedIn Learning,"Pengalaman kerja, rencana pengembangan karir",USD 10.000,learning@linkedin.com
+58,Beasiswa Pelatihan,01-05-2024,31-05-2024,"S1, S2",Coursera,"Sertifikat pelatihan, prestasi akademik",USD 5.000,info@coursera.org
+59,Beasiswa Pendidikan Tinggi,10-05-2024,30-06-2024,"S1, S2",University of Oxford,"Prestasi akademik, IPK min 3.00",GBP 25.000,admissions@ox.ac.uk
+60,Beasiswa Penelitian Lanjutan,01-06-2024,31-07-2024,S3,Wellcome Trust,"Proposal penelitian, rekam jejak publikasi",GBP 100.000,info@wellcome.ac.uk

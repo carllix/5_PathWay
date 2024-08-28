@@ -1,0 +1,153 @@
+id,bidang,judul_lomba,more_info,tanggal_pendaftaran,deadline_pendaftaran,tingkat,lembaga_penyelenggara,narahubung
+1,bisnis,UGM Business Innovation,businessinnovation@ugm.ac.id,15-08-2022,05-09-2023,Universitas,Universitas Gadjah Mada,6281234567890
+2,bisnis,UI BizMaster Challenge,bizmaster@ui.ac.id,10-05-2023,01-09-2023,Universitas,Universitas Indonesia,6282123456789
+3,bisnis,ITS Business Challenge,businesschallenge@its.ac.id,25-04-2021,15-09-2021,Universitas,Institut Teknologi Sepuluh November,6281432109876
+4,bisnis,UNDIP Entrepreneurship,entrepreneurship@undip.ac.id,18-03-2024,08-09-2024,Universitas,Universitas Diponegoro,6281765432190
+5,bisnis,IPB AgriBusiness Competition	,agribusiness@ipb.ac.id,12-11-2023,02-03-2024,Universitas,Institut Pertanian Bogor,6281098765432
+6,bisnis,UNPAD Business Expo,businessexpo@unpad.ac.id,05-08-2023,28-08-2023	,Universitas,Universitas Padjajaran,6281327000205
+7,bisnis,UB Entrepreneur Fair,entrepreneurfair@ub.ac.id,10-04-2022,31-08-2022,Universitas,Universitas Brawijaya,6281543210987
+8,bisnis,UNHAS Start-Up Competition,startup@unhas.ac.id	,28-08-2021	,18-09-2021	,Universitas,Universitas Hasanudin,6281456789012
+9,bisnis,UNS Business Plan,businessplan@uns.ac.id,22-06-2021,10-09-2022,Universitas,Universitas Sebelas Maret,6281987654321
+10,it,UGM ITFest	,https://www.find-it.id/,21-3-2024,1-5-2024,Universitas,Universitas Gadjah Mada,6281953524196
+11,it,Compfest UI	,https://compfest.id/,24-6-2024,25-7-2024,Universitas,Universitas Indonesia,6281123456789
+12,it,USU IT Fair,bit.ly/USUITFair2023	,07-03-2023,29-08-2023,Universitas,Universitas Sumatera Utara,6281678901234
+13,it,ITS Technofest,technofest@its.ac.id,25-05-2022,15-09-2022,Universitas,Institut Teknologi Sepuluh November,6281432109876
+14,it,UNDIP Tech Innovation,techinnovation@undip.ac.id,18-04-2023,08-09-2023,Universitas,Universitas Diponegoro,6281765432190
+15,it,UNHAS Cyber Competition,cybercomp@unhas.ac.id,28-08-2024,18-09-2024	,Universitas,Universitas Hasanudin,6281456789012
+16,it,IPB IT Competition	,itcompetition@ipb.ac.id,12-11-2023,02-03-2024,Universitas,Institut Pertanian Bogor,6281098765432
+17,it,UB IT Olympiad,itolympiad@ub.ac.id,10-04-2021,31-08-2021,Universitas,Universitas Brawijaya,6281543210987
+18,it,UNS IT Expo,itexpo@uns.ac.id,22-07-2021,10-09-2021,Universitas,Universitas Sebelas Maret,6281987654321
+19,it,UNPAD IT Challenge,itchallenge@unpad.ac.id,05-06-2022,28-08-2022	,Universitas,Universitas Padjajaran,6281327000205
+20,essay,UGM Essay Competition,essaycomp@ugm.ac.id,15-03-2021,05-09-2022,Universitas,Universitas Gadjah Mada,6281234567890
+21,essay,UI Essay Fest,essayfest@ui.ac.id,22-07-2023	,15-09-2023	,Universitas,Universitas Indonesia,6281123456789
+22,essay,UI Essay Writing,http://bit.ly/CompfestEssay2023,20-08-2023,12-09-2023,Universitas,Universitas Indonesia,6281123456789
+23,essay,UNDIP National Essay,http://bit.ly/UNDIPNEssay,18-04-2023,08-09-2023,Universitas,Universitas Diponegoro,6281765432190
+24,essay,IPB Agriculture Essay,agressay@ipb.ac.id,12-11-2023,02-03-2024,Universitas,Institut Pertanian Bogor,6281098765432
+25,essay,UNPAD Essay Competition,http://bit.ly/UNPADEssay,05-06-2022,28-08-2022,Universitas,Universitas Padjajaran,6281327000205
+26,essay,UNS Essay Challenge,essaychallenge@uns.ac.id	,22-07-2024,10-09-2024,Universitas,Universitas Sebelas Maret,6281987654321
+27,essay,ITS Essay Writing Competition	,essaywriting@its.ac.id,25-05-2021,15-09-2021,Universitas,Institut Teknologi Sepuluh November,6281432109876
+28,essay,UB Social Essay Competition	,socialessay@ub.ac.id,10-04-2023,31-08-2023	,Universitas,Universitas Brawijaya,6281543210987
+29,essay,UNHAS Essay Writing,essaywriting@unhas.ac.id,28-08-2024,18-09-2024,Universitas,Universitas Hasanudin,6281456789012
+30,poster,ITS Environmental Poster,bit.ly/PosterITS2024,28-08-2024,18-09-2024,Universitas,Institut Teknologi Sepuluh November,6281456789012
+31,poster,UNPAD Cultural Poster Challenge,http://bit.ly/UNPADCulturalPoster2022,05-06-2022,28-08-2022,Universitas,Universitas Padjajaran,6281327000205
+32,poster,UB Art Poster Contest,artposter@ub.ac.id	,10-04-2023,31-08-2023,Universitas,Universitas Brawijaya,6281543210987
+33,poster,ITS Green Poster Competition,greenposter@its.ac.id,25-05-2022,15-09-2022,Universitas,Institut Teknologi Sepuluh November,6281432109876
+34,poster,UNDIP Sustainable Poster,http://bit.ly/UNDIPSustainablePoster2023,18-04-2023	,08-09-2023,Universitas,Universitas Diponegoro,6281765432190
+35,poster,UNHAS Eco Poster Competition,ecoposter@unhas.ac.id	,28-08-2024,18-09-2024,Universitas,Universitas Hasanudin,6281456789012
+36,poster,UNS Poster & Visual Design,posterdesign@uns.ac.id,22-07-2023	,10-09-2023,Universitas,Universitas Sebelas Maret,6281987654321
+37,poster,USU Social Poster Contest,"http://bit.ly/USUSocialPoster2022
+",07-03-2022,29-08-2022	,Universitas,Universitas Sumatera Utara,6281678901234
+38,poster,IPB Agro Poster Competition,"http://bit.ly/IPBAgroPoster2024
+",12-11-2023,02-03-2024,Universitas,Institut Pertanian Bogor,6281098765432
+39,poster,UGM Cultural Heritage Poster,heritageposter@ugm.ac.id	,12-03-2023,25-09-2023,Universitas,Universitas Gadjah Mada,6281234567890
+40,videografi,UGM Creative Video Contest,videocontest@ugm.ac.id,10-04-2023,01-09-2023,Universitas,Universitas Gadjah Mada,6281234567890
+41,videografi,UI Film & Video Festival,uifilmfestival@ui.ac.id,15-06-2024,05-09-2024,Universitas,Universitas Indonesia,6281123456789
+42,videografi,UNS Short Film Competition,shortfilm@uns.ac.id,22-07-2023,12-09-2023,Universitas,Universitas Sebelas Maret,6281987654321
+43,videografi,ITS Video Innovation Challenge,videoinnovation@its.ac.id,12-05-2023,25-09-2023,Universitas,Institut Teknologi Sepuluh November,6281432109876
+44,videografi,UNDIP Visual Media Competition,visualmedia@undip.ac.id,20-04-2024,10-09-2024,Universitas,Universitas Diponegoro,6281765432190
+45,videografi,IPB Agrimedia Video Contest,agrimediavideo@ipb.ac.id,18-11-2023,02-04-2024,Universitas,Institut Pertanian Bogor,6281098765432
+46,videografi,UNPAD Documentary Competition,documentary@unpad.ac.id,10-06-2022,20-09-2022,Universitas,Universitas Padjajaran,6281327000205
+47,videografi,UB Video Creativity Competition,videocreation@ub.ac.id,05-04-2022,15-09-2022,Universitas,Universitas Brawijaya,6281543210987
+48,videografi,UNHAS Cinematic Challenge,cinematic@unhas.ac.id,28-08-2024,18-09-2024,Universitas,Universitas Hasanudin,6281456789012
+49,videografi,USU Visual Storytelling Contest,visualstory@usu.ac.id,12-03-2023,29-08-2023,Universitas,Universitas Sumatera Utara,6281678901234
+50,videografi,UNJ Video Documentary Competition,videodoc@unj.ac.id,15-05-2023,15-08-2023,Universitas,Universitas Negeri Jakarta,6281876543210
+51,bisnis,TECFEST 2024 National Business Competition : Business Case Competition,https://drive.google.com/drive/folders/1flC0zDGGJ-L9X8-Ho0GRmpoD__TiX8Em,29-07-2024,07-08-2024,Universitas,Institut Teknologi Bandung,6282738201922
+52,bisnis,TECFEST 2024 National Business Competition : Business Plan Competition,https://drive.google.com/file/d/1VLuePIlxeKGlVlsy2Dyy681Jpfs-EXdw/view,29-07-2024,07-08-2024,Universitas,Institut Teknologi Bandung,6281234749495
+53,bisnis,MSS Consulting Case Challenge,bit.ly/BookletMCC2024,15-08-2024,07-09-2024,Universitas,Universitas Indonesia,6281327000205
+54,bisnis,Youngpreneur X CBCC : Business Case Competition,https://linktr.ee/youngpreneurcomp,19-08-2024,28-09-2024,Universitas,Universitas Brawijaya,628124353729
+55,bisnis,Youngpreneur X CBCC : Business Plan Competition,https://linktr.ee/youngpreneurcomp,19-08-2024,13-09-2024,Universitas,Universitas Brawijaya,628162537910
+56,bisnis,Youngpreneur X CBCC : Business Model Canvas,https://linktr.ee/youngpreneurcomp,14-08-2024,02-09-2024,Universitas,Universitas Brawijaya,628127373940
+57,bisnis,Futurest Business Case Competition,its.id/m/FBCC2023,28-12-2023,05-02-2024,Universitas,Institut Teknologi Sepuluh November,628127623691
+58,bisnis,Sebelas Maret Business Case Competition,https://uns.id/SMBCC24PreliminaryGuidebook,25-07-2024,11-08-2024,Universitas,Universitas Sebelas Maret,6282139473920
+59,bisnis,Economic Finance Fabulous Project 2024 Business case,11theffect.carrd.co,10-07-2024,22-07-2024,Universitas,Universitas Diponegoro,6281234562718
+60,bisnis,International Company Case and Conference,link.tree/idsc2023,17-08-2024,24-08-2024,Universitas,IDSC,628172637190
+61,it,Google Code Jam 2022,https://codingcompetitionsonair.withgoogle.com/,01-04-2022,05-08-2022,Internasional,Google,626363728100
+62,it,Facebook Hacker Cup 2023,https://web.facebook.com/codingcompetitions/hacker-cup?_rdc=1&_rdr,13-07-2023,18-08-2023,Internasional,Facebook,623929013739
+63,it,Microsoft Imagine Cup 2023,https://imaginecup.microsoft.com/en-us,10-09-2022,10-02-2023,Internasional,Microsoft,623838381010
+64,it,NYU Cybersecurity Awareness Worldwide Capture the Flag (CSAW CTF) 2023,https://www.csaw.io/ctf,01-08-2023,01-10-2023,Internasional,csaw,623838811001
+65,it,Google Kick Start 2023,kickstart-support@google.com,01-01-2023,10-03-2023,Internasional,Google,623747299201
+66,it,Turing Cup 2023,https://www.turing.com/,01-03-2023,05-07-2023,Internasional,Turing,62384982981
+67,it,Hash Code by Google 2023,https://gdg.community.dev/events/details/google-gdg-north-lebanon-presents-hash-code-24-february-register-now/,12-01-2023,24-02-2023,Internasional,Google,623819010100
+68,it,ACM CHI Student Game Competition 2023,https://chi2024.acm.org/for-authors/student-design-competition/,01-10-2023,08-12-2023,Internasional,ACM,623838930100
+69,it,MIT Reality Virtually Hackathon 2020,https://www.mitrealityhack.com/,20-10-2019,08-12-2023,Internasional,Massachusetts Institute of Technology,6237480101
+70,it,NVIDIA AI Challenge 2022,https://www.aicitychallenge.org/,01-07-2022,15-08-2022,Internasional,NVIDIA,62733391910
+71,videografi,Lomba Videografi Nasional,https://ipb.link/panduan-lomba-videografi-fbbbn2023,26-07-2024,08-08-2024,Nasional,Institut Pertanian Bogor,628123568877
+72,videografi,Austin Film Festival - Short Film Competition,https://austinfilmfestival.com/?gad_source=1&gclid=CjwKCAjwlbu2BhA3EiwA3yXyu3xojwN4z3Pzd3jV41IlbUchw3hbfNCUfni3mEhvI9EpHmDpZrhD_hoCwKMQAvD_BwE,26-07-2024,08-08-2024,Internasional,Austin Fest,62388303101
+73,videografi,Raindance Film Festival - Shorts Competition,https://raindance.org/,26-07-2024,08-08-2024,Internasional,Raindance,6283811001001
+74,videografi,Chicago International Film Festival - Short Film Competition,https://www.chicagofilmfestival.com/,26-07-2024,08-08-2024,Internasional,CIFF,6238380282829
+75,videografi,London Short Film Festival,https://www.shortfilms.org.uk/,26-07-2024,08-08-2024,Internasional,London Film Festival,6283918820100
+76,videografi,Annecy International Animation Film Festival - Short Film Competition,https://www.annecyfestival.com/,26-07-2024,08-08-2024,Internasional,Annecy,6283839180820
+77,videografi,PEN America Screenwriting and Video Competition,https://pen.org/,26-07-2024,08-08-2024,Internasional,PEN,6273738819310
+78,videografi,Palm Springs International ShortFest,https://www.psfilmfest.org/,26-07-2024,08-08-2024,Internasional,International ShortFest,627318198282
+79,videografi,Encounters Film Festival,https://www.encounters.film/,26-07-2024,08-08-2024,Internasional,Encounters,628398128109
+80,videografi,Tribeca Film Festival - Tribeca X Award,https://www.tribecafilm.com/,26-07-2024,08-08-2024,Internasional,Tribeca,628391829830
+81,poster,International Poster Biennale in Warsaw,https://warsawposterbiennale.com/,05-04-2023,06-05-2023,Internasional,Warsaw poster,627373838191
+82,poster,Posterheroes - International Poster Competition,https://www.posterheroes.org/,05-04-2023,06-05-2023,Internasional,posterheroes,627373388391
+83,poster,Golden Turtle - Ecoposter Contest,https://wncontest.ru/en/design/,05-04-2023,06-05-2023,Internasional,golden turtle,62383781919
+84,poster,Graphic Matters - Open Call Poster Competition,https://graphicmatters.nl/,05-04-2023,06-05-2023,Internasional,graphic matters,62833939910
+85,poster,Mut zur Wut - International Poster Competition,https://mutzurwut.com/,05-04-2023,06-05-2023,Internasional,mut zur wut,628383100019
+86,poster,Poster For Tomorrow - International Poster Competition,https://www.posterfortomorrow.org/,05-04-2023,06-05-2023,Internasional,poster for tomorrow,6283831991919
+87,poster,World Biennial Exhibition of Student Poster Novi Sad,https://www.studentbiennial-ns.com/,05-04-2023,06-05-2023,Internasional,world biennial ,62838371881
+88,poster,TPT Festival - International Competition of Political Posters,https://tpt.net.pl/,05-04-2023,06-05-2023,Internasional,TPT,6286117881919
+89,poster,Luzerner Theater Poster Competition,https://www.luzernertheater.ch/,05-04-2023,06-05-2023,Internasional,Luzerner,62738383919
+90,poster,Ecuador Poster Bienal,https://ecuadorposterbienal.com/,05-04-2023,06-05-2023,Internasional,Ecuador Bienal,62838849419
+91,essay,EcoFinsc Essay Competition,bit.ly/RegistrationFINEST2024,12-06-2024,12-07-2024,Universitas,Universitas Diponegoro,62623689191
+92,essay,Commonwealth Essay Competition,https://www.royalcwsociety.org/essay-competition/qcec2024,08-09-2023,18-10-2023,Internasional,Commonwealth SOciety,6263738910
+93,essay,John Locke Institute Essay Competition,https://www.johnlockeinstitute.com/essay-competition,08-09-2023,18-10-2023,Internasional,Locke Institute,63848482002
+94,essay,International Essay Contest for Young People by Goi Peace Foundation,https://www.goipeace.or.jp/en/work/essay-contest/,08-09-2023,18-10-2023,Internasional,Goi Peace Foundation,623838811001
+95,essay,The Queen’s Commonwealth Essay Competition,https://www.royalcwsociety.org/essay-competition,08-09-2023,18-10-2023,Internasional,Queens Commonwealth,62834780910
+96,essay,The Royal Economic Society Essay Competition,https://res.org.uk/,08-09-2023,18-10-2023,Internasional,Royal Economic,62733801010
+97,essay,Global Changemakers Essay Competition,https://www.global-changemakers.net/,08-09-2023,18-10-2023,Internasional,Global Changemakers,62818278289
+98,essay,Atlas Shrugged Essay Contest by Ayn Rand Institute,https://aynrand.org/students/essay-contests/atlas-shrugged/?utm_term=scholarship%20essay&utm_campaign=Atlas%2BEssay%2BContest%2B2023%2BV2&utm_source=adwords&utm_medium=ppc&hsa_acc=3459301704&hsa_cam=19749898058&hsa_grp=147344513500&hsa_ad=649719682711&hsa_src=g&hsa_tgt=kwd-17629711&hsa_kw=scholarship%20essay&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjwlbu2BhA3EiwA3yXyu48XfXsJCLrCMW4d48y4w9Nc81hHV4fC9Tz2BTVViCo-MQy0-y3qSBoCBnAQAvD_BwE,08-09-2023,18-10-2023,Internasional,Ayn rand Institute,62738381001
+99,essay,Global Essay Competition by St. Gallen Symposium,https://symposium.org/,08-09-2023,18-10-2023,Internasional,St Gallen Symposium,62338838381
+100,essay,New York Times Student Editorial Contest,https://www.nytimes.com/,08-09-2023,18-10-2023,Internasional,NY Times,62374773819
+101,bisnis,StudentxCEOs 13th GrandSummit,linktr.ee/sxcgrandsummit13,6 April 2024,12 Mei 2024,Nasional,StudentsxCEOs,6281234567890
+102,bisnis,Startup Pitch Competition,contact@startuphub.org,5 Januari 2024,28 Februari 2024,Internasional,Startup Hub International,6281123456789
+103,bisnis,Investment Strategy Contest,info@investmentinstitute.org,10 Januari 2024,15 Maret 2024,Nasional,Investment Strategy Institute,6282234567890
+104,bisnis,Marketing Innovation Challenge,marketingforum@excellence.org,15 Januari 2024,15 April 2024,Nasional,Marketing Excellence Forum,6282123456789
+105,bisnis,Financial Analysis Competition,finance@globalnetwork.org,1 Februari 2024,30 April 2024,Internasional,Global Finance Network,6282345678901
+106,bisnis,Business Model Competition,info@businessmodel.org,10 Februari 2024,15 Mei 2024,Nasional,Business Model Foundation,6281245678901
+107,bisnis,Entrepreneurial Ideas Challenge,club@entrepreneurial.org,1 Maret 2024,30 Juni 2024,Nasional,Entrepreneurial Club,6281134567890
+108,bisnis,Management Case Study Competition,contact@managementsociety.org,15 Maret 2024,15 Juli 2024,Internasional,International Management Society,6282145678901
+109,bisnis,Digital Marketing Competition,info@digitalmarketing.org,1 April 2024,31 Juli 2024,Nasional,Digital Marketing Institute,6282256789012
+110,bisnis,Corporate Strategy Challenge,strategy@network.org,10 April 2024,15 Agustus 2024,Internasional,Corporate Strategy Network,6281267890123
+111,it,Investment Festival (INFEST),infestitb2024.com,13 Juli 2024,20 Juli 2024,Universitas,Kelompok Studi Ekonomi dan Pasar Modal ITB,6281145678901
+112,it,ASEAN Data Science Explorers 2024,aseandse.org,15 Januari 2024,15 April 2024,Internasional,ASEAN,6281678901234
+113,it,ICPC Asia Jakarta Regional Contest 2024,icpc.global,1 Maret 2024,31 Maret 2024,Asia,International Collegiate Programming Contest,6282267891234
+114,it,Indonesia Inventors Day,iysa.or.id,1 Februari 2024,1 Mei 2024,Nasional,Indonesian Young Scientist Association (IYSA),6281778901234
+115,it,Hackathon Merdeka,hackathonmerdeka.id,15 Februari 2024,15 Maret 2024,Nasional,Kominfo,6281789012345
+116,it,Gemastik XVII 2024,https://gemastik.kemdikbud.go.id/,1 Maret 2024,15 Mei 2024,Nasional,Kementerian Pendidikan dan Kebudayaan RI,6281789023456
+117,it,Huawei ICT Competition,huawei.com,1 April 2024,30 April 2024,Internasional,Huawei,6281789034567
+118,it,Smart City App Hack,smartcityapphack.com,10 Maret 2024,10 Juni 2024,Internasional,Smart City Hack,6281890123456
+119,it,Codeforces Global Round 2024,codeforces.com,1 Januari 2024,31 Desember 2024,Internasional,Codeforces,6281890134567
+120,it,Innovative Design Challenge 2024,ieee.org,20 Februari 2024,20 April 2024,Internasional,Institute of Electrical and Electronics Engineers,6281890145678
+121,videografi,International Video Contest,info@globalfilmfestival.org,1 Januari 2024,31 Januari 2024,Internasional,Global Film Festival,6281890156789
+122,videografi,Documentary Film Competition,contact@docassn.org,5 Januari 2024,28 Februari 2024,Nasional,National Documentary Association,6281901234567
+123,videografi,Creative Video Challenge,info@creativemediahub.com,10 Januari 2024,15 Maret 2024,Nasional,Creative Media Hub,6281901234568
+124,videografi,Educational Video Contest,edu@mediafoundation.org,15 Januari 2024,15 April 2024,Nasional,Educational Media Foundation,6281901234569
+125,videografi,Social Issues Video Contest,socialimpact@network.org,1 Februari 2024,30 April 2024,Internasional,Social Impact Network,6281901234570
+126,videografi,Art and Video Showcase,showcase@visualarts.org,10 Februari 2024,15 Mei 2024,Nasional,Visual Arts Society,6282001234567
+127,videografi,Tech Video Challenge,techconference@innovations.org,1 Maret 2024,30 Juni 2024,Internasional,Tech Innovations Conference,6282012345678
+128,videografi,Short Film Competition,shortfilmfest@organization.org,15 Maret 2024,15 Juli 2024,Nasional,Short Film Festival,6282012345679
+129,videografi,Humanities Video Contest,contact@humanitiesarts.org,1 April 2024,31 Juli 2024,Internasional,Humanities and Arts Institute,6282023456780
+130,videografi,Health Awareness Video Contest,healthfoundation@education.org,10 April 2024,15 Agustus 2024,Nasional,Health Education Foundation,6282123456789
+131,poster,Poster Design Competition,info@komunitasdesain.org,1 Januari 2024,31 Januari 2024,Nasional,Komunitas Desain Grafis,6282134567890
+132,poster,National Poster Contest,contact@asosiseni.org,5 Januari 2024,25 Februari 2024,Nasional,Asosiasi Seni Rupa Indonesia,6282145678901
+133,poster,Eco-Poster Challenge,greenart@foundation.org,10 Januari 2024,20 Februari 2024,Internasional,Green Art Foundation,6282156789012
+134,poster,Creative Poster Showcase,showcase@universitas.com,15 Januari 2024,15 Maret 2024,Nasional,Universitas Kreatif,6282234567890
+135,poster,Global Poster Awards,globalawards@designcouncil.org,1 Februari 2024,30 Maret 2024,Internasional,International Design Council,6282345678901
+136,poster,Visual Arts Poster Competition,info@visualartsacademy.edu,10 Februari 2024,10 April 2024,Nasional,Visual Arts Academy,6282456789012
+137,poster,Poster Innovation Contest,contact@designinnovators.com,1 Maret 2024,15 Mei 2024,Nasional,Design Innovators Inc.,6282567890123
+138,poster,Art and Design Poster Competition,artnetwork@globalart.org,15 Maret 2024,30 Mei 2024,Internasional,Global Art Network,6282678901234
+139,poster,Digital Poster Design Challenge,digitalhub@design.org,1 April 2024,1 Juni 2024,Nasional,Digital Design Hub,6282789012345
+140,poster,Poster Art Contest,artenthusiasts@association.org,10 April 2024,30 Juni 2024,Nasional,Art Enthusiasts Association,6282890123456
+141,essay,National Essay Writing Contest,info@pnfoundation.org,1 Januari 2024,31 Januari 2024,Nasional,Pendidikan Nasional Foundation,6282901234567
+142,essay,Social Issues Essay Competition,contact@socialchange.org,5 Januari 2024,28 Februari 2024,Internasional,Global Social Change Network,6283012345678
+143,essay,Environmental Essay Challenge,greenearth@organization.org,10 Januari 2024,15 Maret 2024,Nasional,Green Earth Organization,6283123456789
+144,essay,Economic Insights Essay Contest,ieforum@economic.org,15 Januari 2024,15 April 2024,Internasional,International Economic Forum,6283234567890
+145,essay,Political Analysis Essay Competition,contact@politicalstudies.edu,1 Februari 2024,30 April 2024,Nasional,Political Studies Institute,6283345678901
+146,essay,Technology Impact Essay Challenge,techcenter@innovations.org,10 Februari 2024,15 Mei 2024,Internasional,Tech Innovations Center,6283456789012
+147,essay,Health and Wellness Essay Contest,healthwellness@foundation.org,1 Maret 2024,15 Juni 2024,Nasional,Health and Wellness Foundation,6283567890123
+148,essay,Education Reform Essay Competition,educationreform@alliance.org,15 Maret 2024,30 Juni 2024,Nasional,Education Reform Alliance,6283678901234
+149,essay,Legal Studies Essay Contest,globallegal@studies.org,1 April 2024,15 Juli 2024,Internasional,Global Legal Studies Network,6283789012345
+150,essay,Humanities Essay Challenge,info@humanitiesassoc.org,10 April 2024,31 Juli 2024,Nasional,Humanities Association,6283890123456

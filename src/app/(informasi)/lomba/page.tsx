@@ -7,17 +7,32 @@ import InformasiNavigation from "../components/InformasiNavigation";
 import ModalLombaFilter from "../components/ModalLombaFilter";
 import { usePathname } from "next/navigation";
 import Card from "../components/Card";
+import Papa from "papaparse";
+
+interface Lomba {
+  bidang: string;
+  judul_lomba: string;
+  more_info: string;
+  tanggal_pendaftaran: string;
+  deadline_pendaftaran: string;
+  tingkat: string;
+  lembaga_penyelenggara: string;
+  narahubung: string;
+}
 
 export default function Lomba() {
   const [searchQuery, setSearchQuery] = useState("");
   const [showModal, setShowModal] = useState<boolean>(false);
+  const [lombaData, setLombaData] = useState<Lomba[]>([]);
+  const [selectedBidang, setSelectedBidang] = useState<string[]>([]);
   const pathname = usePathname();
 
   const openModal = () => {
     setShowModal(true);
   };
 
-  const handleSave = () => {
+  const handleSave = (selectedBidang: string[]) => {
+    setSelectedBidang(selectedBidang);
     setShowModal(false);
   };
 
@@ -31,6 +46,33 @@ export default function Lomba() {
       document.body.classList.remove("overflow-hidden");
     };
   }, [showModal]);
+
+  useEffect(() => {
+    fetch("/dataset_lomba.csv")
+      .then((response) => response.text())
+      .then((csvData) => {
+        Papa.parse(csvData, {
+          header: true,
+          skipEmptyLines: true,
+          complete: function (results) {
+            setLombaData(results.data as Lomba[]);
+          },
+        });
+      })
+      .catch((error) => console.error("Error fetching CSV file:", error));
+  }, []);
+
+  const filteredLomba = lombaData.filter((lomba) => {
+    const matchesSearchQuery = lomba.judul_lomba
+      .toLowerCase()
+      .includes(searchQuery.toLowerCase());
+   const matchesBidang =
+     selectedBidang.length === 0 ||
+     selectedBidang.some(
+       (bidang) => lomba.bidang.toLowerCase() === bidang.toLowerCase()
+     );
+    return matchesSearchQuery && matchesBidang;
+  });
 
   return (
     <div className="mt-28 px-4 sm:px-6 lg:px-10">
@@ -61,11 +103,19 @@ export default function Lomba() {
 
       {/* List Lomba */}
       <div className="mt-6">
-        <p className="mb-4 text-sm">Berikut rekomendasi lomba untuk kamu</p>
+        <p className="mb-4 text-sm">
+          {filteredLomba.length > 0
+            ? "Berikut rekomendasi lomba untuk kamu"
+            : "Maaf lomba yang kamu cari tidak ada"}
+        </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2x1:grid-cols-5 gap-10">
-          <Card title="Lomba 1" description="Deskripsi lomba 1" />
-          <Card title="Lomba 1" description="Deskripsi lomba 1" />
-          <Card title="Lomba 1" description="Deskripsi lomba 1" />
+          {filteredLomba.map((lomba, index) => (
+            <Card
+              key={index}
+              title={lomba.judul_lomba}
+              description="Deskripsi tidak tersedia"
+            />
+          ))}
         </div>
       </div>
 

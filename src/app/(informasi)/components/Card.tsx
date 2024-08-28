@@ -10,8 +10,9 @@ export default function Card({
 }) {
   return (
     <div className="rounded-xl shadow-md p-4 bg-[#CCE7F7] text-sm sm:text-base hover:bg-[#B0D4ED] cursor-pointer">
-      <Link href="/lomba/1">
+      <Link href={`/lomba/${title}`}>
         <div className="flex flex-col gap-2">
+          {/* Gambar tidak tersedia pada dataset */}
           <Image
             src="/information-details.jpg"
             alt="poster"
