@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import { IoMdSearch } from "react-icons/io";
+import { IoFilter } from "react-icons/io5";
 import InformasiNavigation from "../components/InformasiNavigation";
 import ModalLombaFilter from "../components/ModalLombaFilter";
 import { usePathname } from "next/navigation";
@@ -37,7 +38,8 @@ export default function Lomba() {
     <div className="mt-28 px-4 sm:px-6 lg:px-10">
       <div className="flex justify-between gap-2 sm:gap-8 md:gap-10">
         {/* Search Bar */}
-        <div className="flex w-7/12 items-center justify-between rounded-lg bg-[#F0D78C] py-2 px-3">
+        <div className="flex w-7/12 items-center rounded-xl bg-[#F0D78C] py-2 px-3 md:px-5 gap-x-2 md:gap-x-4">
+          <IoMdSearch className="text-xl" />
           <input
             type="text"
             placeholder="Sedang cari lomba apa?"
@@ -45,7 +47,6 @@ export default function Lomba() {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full bg-transparent outline-none text-[10px] sm:text-xs md:text-sm lg:text-base placeholder-black"
           />
-          <IoMdSearch className="text-xl text-gray-400" />
         </div>
 
         {/* Navigation */}
@@ -53,15 +54,10 @@ export default function Lomba() {
 
         {/* Filter */}
         <div
-          className="flex w-1/12 items-center justify-center bg-[#F0D78C] p-2 rounded-lg cursor-pointer"
+          className="flex w-1/12 items-center justify-center bg-[#F0D78C] p-2 rounded-xl cursor-pointer"
           onClick={openModal}
         >
-          <Image
-            src="/icon-filter.png"
-            alt="filter"
-            width={20}
-            height={20}
-          />
+          <IoFilter className="text-xl" />
         </div>
       </div>
 

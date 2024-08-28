@@ -13,9 +13,26 @@ export default function DetailLomba() {
         Kembali
       </Link>
       <div className="grid lg:grid-cols-3 gap-9 mt-10">
-        <Poster />
-        <Deskripsi />
-        <Details />
+        <Poster imageUrl="/information-details.jpg" />
+        <Deskripsi
+          desc="Kompetisi ini adalah ajang bagi peserta untuk merancang dan
+        mempresentasikan model bisnis inovatif dengan menghadirkan ide-ide
+        kreatif yang dapat diimplementasikan di dunia nyata. Peserta akan
+        melalui beberapa tahap simulasi yang dirancang untuk menguji kemampuan
+        mereka dalam berbagai aspek bisnis, seperti analisis pasar, pengembangan
+        produk, strategi pemasaran, dan manajemen keuangan."
+          url="#"
+        />
+        <Details
+          title="BizMaster Challenge"
+          organizer="Fakultas Ekonomi dan Bisnis Universitas Indonesia"
+          contactLink="#"
+          reagistrationLink="#"
+          deadline="10 Januari 2023"
+          registrationFee="Rp100.000"
+          level="Universitas"
+          category="Bisnis"
+        />
       </div>
       <Diskusi />
     </div>

@@ -72,7 +72,7 @@ export default function ModalLombaFilter({
   };
 
   return (
-    <div className="absolute top-24 left-1/2 -translate-x-1/2 w-4/5 max-w-sm bg-[#F0D78C] p-4 rounded-xl text-xs">
+    <div className="absolute top-24 left-1/2 -translate-x-1/2 w-4/5 max-w-sm bg-[#F0D78C] p-4 rounded-2xl text-xs">
       <Kategori
         title="Bidang"
         values={bidang}
