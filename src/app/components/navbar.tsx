@@ -4,8 +4,11 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { signIn, signOut, useSession } from "next-auth/react";
+import { Button } from "@/components/ui/button";
 
-export default function Navbar() {
+export default function NavbarComponent() {
+  const { data: session } = useSession(); // Mendapatkan data sesi
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
@@ -15,11 +18,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -31,10 +30,13 @@ export default function Navbar() {
   if (noNavbarRoutes.includes(pathname)) {
     return null;
   }
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-40 ${
-        isInformasiActive || isOpen || isScrolled ? "bg-white" : "bg-transparent"
+        isInformasiActive || isOpen || isScrolled
+          ? "bg-white"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-full mx-auto py-4 px-4 sm:px-6 lg:px-10">
@@ -55,7 +57,7 @@ export default function Navbar() {
               />
             </Link>
           </div>
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden items-center md:flex space-x-4">
             <Link
               href="/"
               className={`text-gray-800 hover:text-gray-600 ${
@@ -80,6 +82,20 @@ export default function Navbar() {
             >
               Tentang Kita
             </Link>
+
+            {/* Conditional Sign In/Sign Out Button */}
+            {session ? (
+              <Button
+                onClick={() => signOut()}
+                className="h-8 w-24 bg-red-600 hover:bg-red-800"
+              >
+                Sign Out
+              </Button>
+            ) : (
+              <Button onClick={() => signIn()} className="h-8 w-24">
+                Log In
+              </Button>
+            )}
           </div>
           <div className="md:hidden">
             <button
@@ -131,6 +147,19 @@ export default function Navbar() {
           >
             Tentang Kita
           </Link>
+          {/* Conditional Sign In/Sign Out Button */}
+          {session ? (
+            <Button
+              onClick={() => signOut()}
+              className="h-8 w-24 bg-red-600 hover:bg-red-800"
+            >
+              Sign Out
+            </Button>
+          ) : (
+            <Button onClick={() => signIn()} className="h-8 w-24">
+              Log In
+            </Button>
+          )}
         </div>
       )}
     </nav>

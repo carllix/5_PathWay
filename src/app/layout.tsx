@@ -3,6 +3,7 @@ import { allright, poppins } from "./fonts";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import ClientWrapper from "./clientWrapper";
 
 export const metadata: Metadata = {
   title: "PathWay",
@@ -20,9 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} ${allright.variable}`}>
       <body>
-        <Navbar />
-        {children}
-        <Footer />
+        <ClientWrapper>{children}</ClientWrapper>
       </body>
     </html>
   );
