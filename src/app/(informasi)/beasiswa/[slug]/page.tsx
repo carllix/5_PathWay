@@ -84,7 +84,7 @@ export default function DetailBeasiswa() {
       {beasiswa && (
         <>
           <div className="grid lg:grid-cols-2 gap-9 mt-10">
-            <Poster imageUrl="/information-details.jpg" />
+            <Poster imageUrl="/default_beasiswa.jpg" />
             <div className="flex flex-col gap-9">
               <Details
                 title={beasiswa.judul_beasiswa}
@@ -95,10 +95,7 @@ export default function DetailBeasiswa() {
                 scholarship_amount={beasiswa.totaluang_beasiswa}
                 level={beasiswa.tingkat}
               />
-              <Deskripsi
-                desc={beasiswa.deskripsi}
-                onButtonClick={openModal}
-              />
+              <Deskripsi desc={beasiswa.deskripsi} onButtonClick={openModal} />
             </div>
           </div>
 

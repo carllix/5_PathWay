@@ -5,10 +5,12 @@ export default function Card({
   title,
   description,
   type,
+  imageUrl,
 }: {
   title: string;
   description: string;
   type: string;
+  imageUrl: string;
 }) {
   return (
     <div className="rounded-xl shadow-md p-4 bg-[#CCE7F7] text-sm sm:text-base hover:bg-[#B0D4ED] cursor-pointer">
@@ -18,7 +20,7 @@ export default function Card({
         <div className="flex flex-col gap-2">
           {/* Gambar tidak tersedia pada dataset */}
           <Image
-            src="/information-details.jpg"
+            src={imageUrl}
             alt="poster"
             width={800}
             height={1134}

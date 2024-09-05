@@ -80,7 +80,7 @@ export default function DetailLomba() {
       {lomba && (
         <>
           <div className="grid lg:grid-cols-2 gap-9 mt-10">
-            <Poster imageUrl="/information-details.jpg" />
+            <Poster imageUrl="/default_lomba.jpg" />
             <div className="flex flex-col gap-9">
               <Details
                 title={lomba.judul_lomba}

@@ -115,6 +115,7 @@ export default function Lomba() {
               title={lomba.judul_lomba}
               type="lomba"
               description="Deskripsi tidak tersedia satu dua tiga empat lima enam tujuh delapan sembilan sepuluh fuck you love yeay huhuhu hehehehe hohohoho yeayyy"
+              imageUrl="/default_lomba.jpg"
             />
           ))}
         </div>

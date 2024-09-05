@@ -122,6 +122,7 @@ export default function Beasiswa() {
               title={beasiswa.judul_beasiswa}
               type="beasiswa"
               description={beasiswa.deskripsi}
+              imageUrl="/default_beasiswa.jpg"
             />
           ))}
         </div>
