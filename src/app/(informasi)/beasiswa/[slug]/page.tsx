@@ -27,7 +27,9 @@ function formatDate(dateString: string) {
 export default function DetailBeasiswa() {
   const router = useRouter();
   const params = useParams();
-  const title = decodeURIComponent(params.slug);
+  // Menambahkan pengecekan tipe untuk memastikan params.slug adalah string
+  const title = Array.isArray(params.slug) ? params.slug[0] : params.slug;
+  const decodedTitle = decodeURIComponent(title);
 
   const [showModal, setShowModal] = useState<boolean>(false);
   const [beasiswaData, setBeasiswaData] = useState<Beasiswa[]>([]);
@@ -67,7 +69,7 @@ export default function DetailBeasiswa() {
   }, []);
 
   const beasiswa = beasiswaData.find(
-    (beasiswa) => beasiswa.judul_beasiswa === title
+    (beasiswa) => beasiswa.judul_beasiswa === decodedTitle
   );
 
   return (
@@ -108,7 +110,7 @@ export default function DetailBeasiswa() {
               <div className="fixed inset-0 bg-black opacity-30 z-40"></div>
               <div className="fixed inset-0 flex items-center justify-center z-50">
                 <ModalSyarat
-                syarat={beasiswa.syarat_ketentuan}
+                  syarat={beasiswa.syarat_ketentuan}
                   more_info={beasiswa.more_info}
                   handleClose={handleClose}
                 />

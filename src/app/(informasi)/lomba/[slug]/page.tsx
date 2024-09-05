@@ -27,7 +27,9 @@ function formatDate(dateString: string) {
 export default function DetailLomba() {
   const router = useRouter();
   const params = useParams();
-  const title = decodeURIComponent(params.slug);
+  // Menambahkan pengecekan tipe untuk memastikan params.slug adalah string
+  const title = Array.isArray(params.slug) ? params.slug[0] : params.slug;
+  const decodedTitle = decodeURIComponent(title);
 
   const [showModal, setShowModal] = useState<boolean>(false);
   const [lombaData, setLombaData] = useState<Lomba[]>([]);
@@ -66,7 +68,7 @@ export default function DetailLomba() {
       .catch((error) => console.error("Error fetching CSV file:", error));
   }, []);
 
-  const lomba = lombaData.find((lomba) => lomba.judul_lomba === title);
+  const lomba = lombaData.find((lomba) => lomba.judul_lomba === decodedTitle);
 
   return (
     <div className="mt-28 px-4 sm:px-6 lg:px-10">
