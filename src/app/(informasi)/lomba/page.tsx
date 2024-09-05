@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 import Card from "../components/Card";
 import Papa from "papaparse";
 
-interface Lomba {
+export interface Lomba {
   bidang: string;
   judul_lomba: string;
   more_info: string;
@@ -113,7 +113,8 @@ export default function Lomba() {
             <Card
               key={index}
               title={lomba.judul_lomba}
-              description="Deskripsi tidak tersedia"
+              type="lomba"
+              description="Deskripsi tidak tersedia satu dua tiga empat lima enam tujuh delapan sembilan sepuluh fuck you love yeay huhuhu hehehehe hohohoho yeayyy"
             />
           ))}
         </div>

@@ -1,4 +1,4 @@
-id,jenis,tanggal_pendaftaran,deadline_pendaftaran,tingkat,lembaga_penyelenggara,syarat_ketentuan,totaluang_beasiswa,more_info
+id,judul_beasiswa,tanggal_pendaftaran,deadline_pendaftaran,tingkat,lembaga_penyelenggara,syarat_ketentuan,totaluang_beasiswa,more_info
 1,Beasiswa Tanoto Foundation,01-02-2024,31-03-2024,"S1, S2",Tanoto Foundation,"IPK minimal 3.5, Mahasiswa aktif, Tergabung dalam organisasi",Rp 24.000.000/tahun,beasiswa@tanotofoundation.org
 2,Beasiswa Karya Salemba Empat,01-03-2024,30-04-2024,S1,Yayasan Karya Salemba Empat,"Mahasiswa aktif, IPK minimal 3.0, Terlibat kegiatan sosial",Rp 7.000.000/tahun,info@karyasalemba4.org
 3,Beasiswa Pertamina Sobat Bumi,01-01-2024,15-03-2024,"S1, S2",Pertamina Foundation,"Mahasiswa aktif, Minat dalam lingkungan, IPK minimal 3.0",Rp 18.000.000/tahun,sobatbumi@pertaminafoundation.org
