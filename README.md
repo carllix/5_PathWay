@@ -62,8 +62,8 @@ To run it locally:
 |Fhatika Adhalisman Ryanjani|19623138|UI/UX|
 
 ## References
-Next.js: https://nextjs.org/
-Tailwind CSS: https://tailwindcss.com/
-Shadcn/ui: https://ui.shadcn.com/
-Prisma: https://www.prisma.io/
-NextAuth.js: https://next-auth.js.org/
+- Next.js: https://nextjs.org/
+- Tailwind CSS: https://tailwindcss.com/
+- Shadcn/ui: https://ui.shadcn.com/
+- Prisma: https://www.prisma.io/
+- NextAuth.js: https://next-auth.js.org/
