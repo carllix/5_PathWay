@@ -11,6 +11,7 @@ import Papa from "papaparse";
 import { Lomba } from "../page";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
 
 function formatDate(dateString: string) {
   // Memisahkan string tanggal dan membuat objek Date
@@ -28,6 +29,7 @@ function formatDate(dateString: string) {
 export default function DetailLomba() {
   const router = useRouter();
   const params = useParams();
+  const { data: session, status } = useSession();
   // Menambahkan pengecekan tipe untuk memastikan params.slug adalah string
   const title = Array.isArray(params.slug) ? params.slug[0] : params.slug;
   const decodedTitle = decodeURIComponent(title);
