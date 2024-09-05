@@ -8,7 +8,7 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 
 export default function NavbarComponent() {
-  const { data: session } = useSession(); // Mendapatkan data sesi
+  const { data: session } = useSession(); 
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();

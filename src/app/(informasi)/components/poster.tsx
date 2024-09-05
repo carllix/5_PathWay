@@ -9,7 +9,7 @@ export default function Poster({ imageUrl }: PosterProps) {
   return (
     <div className="flex justify-center">
       <Image
-        className="rounded-3xl w-4/5 lg:w-full"
+        className="rounded-3xl w-4/5 lg:w-full h-auto lg:h-screen"
         src={imageUrl}
         alt="poster"
         width={800}

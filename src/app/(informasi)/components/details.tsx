@@ -5,13 +5,15 @@ import Link from "next/link";
 interface DetailsProps {
   title: string;
   organizer: string;
-  contactLink: string;
+  contactLink?: string;
   registrationLink: string;
   deadline: string;
-  registrationFee: string;
+  registrationFee?: string;
   level: string;
-  category: string;
+  category?: string;
+  scholarship_amount?: string;
 }
+
 export default function Details({
   title,
   organizer,
@@ -21,6 +23,7 @@ export default function Details({
   registrationFee,
   level,
   category,
+  scholarship_amount
 }: DetailsProps) {
   return (
     <div className="bg-[#F0D78C] rounded-3xl p-5">
@@ -28,24 +31,30 @@ export default function Details({
       <p className="text-lg my-1">{organizer}</p>
       <div className="grid grid-cols-2 justify-stretch gap-2 my-4">
         <Button className="font-semibold h-10 p-4 bg-[#4F81C7] rounded-xl text-white hover:bg-blue-900">
-          <Link href={contactLink}>Narahubung</Link>
+          {contactLink && (
+            <Link href={contactLink} target="_blank">
+              Narahubung
+            </Link>
+          )}
         </Button>
         <Button className="font-semibold h-10 p-4 bg-[#4F81C7] rounded-xl text-white hover:bg-blue-900">
-          <Link href={registrationLink}>Daftar</Link>
+          <Link href={registrationLink} target="_blank">
+            Daftar
+          </Link>
         </Button>
       </div>
       <div className="grid grid-cols-2 text-sm">
         <div className="flex flex-col gap-3">
           <p>Deadline</p>
-          <p>Pendaftaran</p>
+          <p>{registrationFee? "Biaya Pendaftaran" : "Total Uang Beasiswa"}</p>
           <p>Tingkat</p>
-          <p>Bidang</p>
+          {category && <p>Bidang</p>}
         </div>
         <div className="font-bold text-end flex flex-col gap-3">
           <p>{deadline}</p>
-          <p>{registrationFee}</p>
+          <p>{registrationFee? registrationFee : scholarship_amount}</p>
           <p>{level}</p>
-          <p>{category}</p>
+          {category && <p className="uppercase">{category}</p>}
         </div>
       </div>
       {/* <div className="relative mt-6">

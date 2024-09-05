@@ -3,30 +3,30 @@ id,bidang,judul_lomba,more_info,tanggal_pendaftaran,deadline_pendaftaran,tingkat
 2,bisnis,UI BizMaster Challenge,bizmaster@ui.ac.id,10-05-2023,01-09-2023,Universitas,Universitas Indonesia,6282123456789
 3,bisnis,ITS Business Challenge,businesschallenge@its.ac.id,25-04-2021,15-09-2021,Universitas,Institut Teknologi Sepuluh November,6281432109876
 4,bisnis,UNDIP Entrepreneurship,entrepreneurship@undip.ac.id,18-03-2024,08-09-2024,Universitas,Universitas Diponegoro,6281765432190
-5,bisnis,IPB AgriBusiness Competition	,agribusiness@ipb.ac.id,12-11-2023,02-03-2024,Universitas,Institut Pertanian Bogor,6281098765432
-6,bisnis,UNPAD Business Expo,businessexpo@unpad.ac.id,05-08-2023,28-08-2023	,Universitas,Universitas Padjajaran,6281327000205
+5,bisnis,IPB AgriBusiness Competition,agribusiness@ipb.ac.id,12-11-2023,02-03-2024,Universitas,Institut Pertanian Bogor,6281098765432
+6,bisnis,UNPAD Business Expo,businessexpo@unpad.ac.id,05-08-2023,28-08-2023,Universitas,Universitas Padjajaran,6281327000205
 7,bisnis,UB Entrepreneur Fair,entrepreneurfair@ub.ac.id,10-04-2022,31-08-2022,Universitas,Universitas Brawijaya,6281543210987
-8,bisnis,UNHAS Start-Up Competition,startup@unhas.ac.id	,28-08-2021	,18-09-2021	,Universitas,Universitas Hasanudin,6281456789012
+8,bisnis,UNHAS Start-Up Competition,startup@unhas.ac.id,28-08-2021,18-09-2021,Universitas,Universitas Hasanudin,6281456789012
 9,bisnis,UNS Business Plan,businessplan@uns.ac.id,22-06-2021,10-09-2022,Universitas,Universitas Sebelas Maret,6281987654321
-10,it,UGM ITFest	,https://www.find-it.id/,21-3-2024,1-5-2024,Universitas,Universitas Gadjah Mada,6281953524196
-11,it,Compfest UI	,https://compfest.id/,24-6-2024,25-7-2024,Universitas,Universitas Indonesia,6281123456789
-12,it,USU IT Fair,bit.ly/USUITFair2023	,07-03-2023,29-08-2023,Universitas,Universitas Sumatera Utara,6281678901234
+10,it,UGM ITFest,https://www.find-it.id/,21-3-2024,1-5-2024,Universitas,Universitas Gadjah Mada,6281953524196
+11,it,Compfest UI,https://compfest.id/,24-6-2024,25-7-2024,Universitas,Universitas Indonesia,6281123456789
+12,it,USU IT Fair,bit.ly/USUITFair2023,07-03-2023,29-08-2023,Universitas,Universitas Sumatera Utara,6281678901234
 13,it,ITS Technofest,technofest@its.ac.id,25-05-2022,15-09-2022,Universitas,Institut Teknologi Sepuluh November,6281432109876
 14,it,UNDIP Tech Innovation,techinnovation@undip.ac.id,18-04-2023,08-09-2023,Universitas,Universitas Diponegoro,6281765432190
-15,it,UNHAS Cyber Competition,cybercomp@unhas.ac.id,28-08-2024,18-09-2024	,Universitas,Universitas Hasanudin,6281456789012
-16,it,IPB IT Competition	,itcompetition@ipb.ac.id,12-11-2023,02-03-2024,Universitas,Institut Pertanian Bogor,6281098765432
+15,it,UNHAS Cyber Competition,cybercomp@unhas.ac.id,28-08-2024,18-09-2024,Universitas,Universitas Hasanudin,6281456789012
+16,it,IPB IT Competition,itcompetition@ipb.ac.id,12-11-2023,02-03-2024,Universitas,Institut Pertanian Bogor,6281098765432
 17,it,UB IT Olympiad,itolympiad@ub.ac.id,10-04-2021,31-08-2021,Universitas,Universitas Brawijaya,6281543210987
 18,it,UNS IT Expo,itexpo@uns.ac.id,22-07-2021,10-09-2021,Universitas,Universitas Sebelas Maret,6281987654321
-19,it,UNPAD IT Challenge,itchallenge@unpad.ac.id,05-06-2022,28-08-2022	,Universitas,Universitas Padjajaran,6281327000205
+19,it,UNPAD IT Challenge,itchallenge@unpad.ac.id,05-06-2022,28-08-2022,Universitas,Universitas Padjajaran,6281327000205
 20,essay,UGM Essay Competition,essaycomp@ugm.ac.id,15-03-2021,05-09-2022,Universitas,Universitas Gadjah Mada,6281234567890
-21,essay,UI Essay Fest,essayfest@ui.ac.id,22-07-2023	,15-09-2023	,Universitas,Universitas Indonesia,6281123456789
+21,essay,UI Essay Fest,essayfest@ui.ac.id,22-07-2023,15-09-2023,Universitas,Universitas Indonesia,6281123456789
 22,essay,UI Essay Writing,http://bit.ly/CompfestEssay2023,20-08-2023,12-09-2023,Universitas,Universitas Indonesia,6281123456789
 23,essay,UNDIP National Essay,http://bit.ly/UNDIPNEssay,18-04-2023,08-09-2023,Universitas,Universitas Diponegoro,6281765432190
 24,essay,IPB Agriculture Essay,agressay@ipb.ac.id,12-11-2023,02-03-2024,Universitas,Institut Pertanian Bogor,6281098765432
 25,essay,UNPAD Essay Competition,http://bit.ly/UNPADEssay,05-06-2022,28-08-2022,Universitas,Universitas Padjajaran,6281327000205
-26,essay,UNS Essay Challenge,essaychallenge@uns.ac.id	,22-07-2024,10-09-2024,Universitas,Universitas Sebelas Maret,6281987654321
-27,essay,ITS Essay Writing Competition	,essaywriting@its.ac.id,25-05-2021,15-09-2021,Universitas,Institut Teknologi Sepuluh November,6281432109876
-28,essay,UB Social Essay Competition	,socialessay@ub.ac.id,10-04-2023,31-08-2023	,Universitas,Universitas Brawijaya,6281543210987
+26,essay,UNS Essay Challenge,essaychallenge@uns.ac.id,22-07-2024,10-09-2024,Universitas,Universitas Sebelas Maret,6281987654321
+27,essay,ITS Essay Writing Competition,essaywriting@its.ac.id,25-05-2021,15-09-2021,Universitas,Institut Teknologi Sepuluh November,6281432109876
+28,essay,UB Social Essay Competition,socialessay@ub.ac.id,10-04-2023,31-08-2023,Universitas,Universitas Brawijaya,6281543210987
 29,essay,UNHAS Essay Writing,essaywriting@unhas.ac.id,28-08-2024,18-09-2024,Universitas,Universitas Hasanudin,6281456789012
 30,poster,ITS Environmental Poster,bit.ly/PosterITS2024,28-08-2024,18-09-2024,Universitas,Institut Teknologi Sepuluh November,6281456789012
 31,poster,UNPAD Cultural Poster Challenge,http://bit.ly/UNPADCulturalPoster2022,05-06-2022,28-08-2022,Universitas,Universitas Padjajaran,6281327000205
