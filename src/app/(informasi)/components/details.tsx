@@ -46,7 +46,7 @@ export default function Details({
       <div className="grid grid-cols-2 text-sm">
         <div className="flex flex-col gap-3">
           <p>Deadline</p>
-          <p>{registrationFee? "Biaya Pendaftaran" : "Total Uang Beasiswa"}</p>
+          <p>{registrationFee? "Biaya Pendaftaran" : "Total Beasiswa"}</p>
           <p>Tingkat</p>
           {category && <p>Bidang</p>}
         </div>
