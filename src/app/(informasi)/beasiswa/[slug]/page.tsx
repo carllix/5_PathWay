@@ -96,12 +96,7 @@ export default function DetailBeasiswa() {
                 level={beasiswa.tingkat}
               />
               <Deskripsi
-                desc="Kompetisi ini adalah ajang bagi peserta untuk merancang dan
-        mempresentasikan model bisnis inovatif dengan menghadirkan ide-ide
-        kreatif yang dapat diimplementasikan di dunia nyata. Peserta akan
-        melalui beberapa tahap simulasi yang dirancang untuk menguji kemampuan
-        mereka dalam berbagai aspek bisnis, seperti analisis pasar, pengembangan
-        produk, strategi pemasaran, dan manajemen keuangan."
+                desc={beasiswa.deskripsi}
                 onButtonClick={openModal}
               />
             </div>

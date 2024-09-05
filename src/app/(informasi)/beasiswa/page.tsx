@@ -18,7 +18,7 @@ export interface Beasiswa {
   syarat_ketentuan: string
   totaluang_beasiswa: string;
   more_info: string;
-
+  deskripsi: string;
 }
 
 export default function Beasiswa() {
@@ -121,7 +121,7 @@ export default function Beasiswa() {
               key={index}
               title={beasiswa.judul_beasiswa}
               type="beasiswa"
-              description="Deskripsi tidak tersedia satu dua tiga empat lima enam tujuh delapan sembilan sepuluh fuck you love yeay huhuhu hehehehe hohohoho yeayyy"
+              description={beasiswa.deskripsi}
             />
           ))}
         </div>
