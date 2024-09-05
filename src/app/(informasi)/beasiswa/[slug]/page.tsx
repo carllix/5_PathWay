@@ -10,6 +10,8 @@ import ModalSyarat from "../../components/ModalSyarat";
 import Papa from "papaparse";
 import { Beasiswa } from "../page";
 import { useParams, useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
+import Link from "next/link";
 
 function formatDate(dateString: string) {
   // Memisahkan string tanggal dan membuat objek Date
@@ -27,6 +29,7 @@ function formatDate(dateString: string) {
 export default function DetailBeasiswa() {
   const router = useRouter();
   const params = useParams();
+  const { data: session, status } = useSession();
   // Menambahkan pengecekan tipe untuk memastikan params.slug adalah string
   const title = Array.isArray(params.slug) ? params.slug[0] : params.slug;
   const decodedTitle = decodeURIComponent(title);
@@ -103,7 +106,20 @@ export default function DetailBeasiswa() {
               />
             </div>
           </div>
-          <Diskusi />
+
+          {/* Forum Diskusi */}
+          <h1 className="font-extrabold text-xl mt-10">Forum Diskusi</h1>
+          {status === "authenticated" ? (
+            <Diskusi />
+          ) : (
+            <p className="my-4">
+              Anda harus login terlebih dahulu untuk membagikan komentar di
+              forum diskusi ini!{" "}
+              <Link href="/login" className="underline text-[#4F81C7]">
+                Login
+              </Link>
+            </p>
+          )}
 
           {showModal && (
             <div>

@@ -10,6 +10,7 @@ import ModalSyarat from "../../components/ModalSyarat";
 import Papa from "papaparse";
 import { Lomba } from "../page";
 import { useParams, useRouter } from "next/navigation";
+import Link from "next/link";
 
 function formatDate(dateString: string) {
   // Memisahkan string tanggal dan membuat objek Date
@@ -102,7 +103,20 @@ export default function DetailLomba() {
               />
             </div>
           </div>
-          <Diskusi />
+
+          {/* Forum Diskusi */}
+          <h1 className="font-extrabold text-xl mt-10">Forum Diskusi</h1>
+          {status === "authenticated" ? (
+            <Diskusi />
+          ) : (
+            <p className="my-4">
+              Anda harus login terlebih dahulu untuk membagikan komentar di
+              forum diskusi ini!{" "}
+              <Link href="/login" className="underline text-[#4F81C7]">
+                Login
+              </Link>
+            </p>
+          )}
 
           {showModal && (
             <div>
