@@ -1,13 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import Poster from "./components/poster";
-import Deskripsi from "./components/deskripsi";
-import Diskusi from "./components/diskusi";
-import Details from "./components/details";
+import Poster from "../../components/poster";
+import Deskripsi from "../../components/deskripsi";
+import Diskusi from "../../components/diskusi";
+import Details from "../../components/details";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import ModalSyarat from "./components/ModalSyarat";
+import ModalSyarat from "../../components/ModalSyarat";
 
 export default function DetailLomba() {
   const [showModal, setShowModal] = useState<boolean>(false);
