@@ -1,7 +1,16 @@
-# PathWay
+<h1 align="center">PathWay</h1>
+<h3 align="center">Scholarship and Competition Information Platform</h3>
+
+## Table of Contents
+- [Description](#description)
+- [Framework and Tools Used](#framework-and-tools-used)
+- [Structure](#structure)
+- [How To Run](#how-to-run)
+- [Contributors](#contributors)
+- [References](#references)
 
 ## Description
-PathWay adalah sebuah website yang menyajikan informasi mengenai lomba dan beasiswa. Pengguna dapat memilah informasi yang ingin ditampilkan dengan fitur pendukung yang tertera pada website seperti search, filter, dan lainnya.
+PathWay adalah platform digital yang dirancang khusus untuk memenuhi kebutuhan mahasiswa dalam mencari informasi penting secara efisien. Kami memahami betapa pentingnya akses terhadap informasi yang akurat dan terpusat, terutama terkait lomba, beasiswa, dan peluang lainnya yang dapat mendukung perjalanan akademik dan karier mahasiswa.
 
 ## Framework and Tools Used
 - **Next.js**: a react framework for building full-stack web applications.
@@ -15,12 +24,18 @@ PathWay adalah sebuah website yang menyajikan informasi mengenai lomba dan beasi
 ## Structure
 - Auth
   - Sign Up : Memungkinkan pengguna baru untuk mendaftar dan membuat akun di platform.
+  ![Sign Up](image/signup.png)
   - Login : Memungkinkan pengguna yang telah terdaftar untuk masuk ke akun mereka dengan menggunakan kredensial yang benar, seperti email dan kata sandi.
+  ![Login](image/login.png)
 - Beranda : Halaman utama dari sebuah situs web kami yang berfungsi sebagai pintu masuk utama bagi pengguna untuk menavigasi ke bagian-bagian lain.
+![Beranda](image/beranda.png)
 - Tentang Kita : Menyediakan informasi mengenai platform
+![Tentang Kita](image/tentangkita.png)
 - Informasi 
   - Beasiswa : Berisikan informasi beasiswa yang ada, dengan filter pencarian berdasarkan tingkat yang bertujuan untuk memudahkan user.
+  ![Beasiswa](image/beasiswa.png)
   - Lomba : Berisikan informasi lomba yang ada, dengan filter pencarian berdasarkan bidang/kategori yang bertujuan untuk memudahkan user.
+  ![Lomba](image/lomba.png)
 
 ## How To Run
 To access this website, you can just simply go to: 
