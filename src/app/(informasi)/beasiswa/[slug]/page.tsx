@@ -12,6 +12,7 @@ import { Beasiswa } from "../page";
 import { useParams, useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
+import { formatTitleToUrl } from "../../components/Card";
 
 function formatDate(dateString: string) {
   // Memisahkan string tanggal dan membuat objek Date
@@ -29,10 +30,9 @@ function formatDate(dateString: string) {
 export default function DetailBeasiswa() {
   const router = useRouter();
   const params = useParams();
+  const { slug } = params;
+
   const { data: session, status } = useSession();
-  // Menambahkan pengecekan tipe untuk memastikan params.slug adalah string
-  const title = Array.isArray(params.slug) ? params.slug[0] : params.slug;
-  const decodedTitle = decodeURIComponent(title);
 
   const [showModal, setShowModal] = useState<boolean>(false);
   const [beasiswaData, setBeasiswaData] = useState<Beasiswa[]>([]);
@@ -72,7 +72,7 @@ export default function DetailBeasiswa() {
   }, []);
 
   const beasiswa = beasiswaData.find(
-    (beasiswa) => beasiswa.judul_beasiswa === decodedTitle
+    (beasiswa) => formatTitleToUrl(beasiswa.judul_beasiswa) === slug
   );
 
   return (

@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
+export function formatTitleToUrl(title: string): string {
+  return title.toLowerCase().replace(/\s+/g, "-");
+}
+
 export default function Card({
   title,
   description,
@@ -15,7 +19,11 @@ export default function Card({
   return (
     <div className="rounded-xl shadow-md p-4 bg-[#CCE7F7] text-sm sm:text-base hover:bg-[#B0D4ED] cursor-pointer">
       <Link
-        href={type === "beasiswa" ? `/beasiswa/${title}` : `/lomba/${title}`}
+        href={
+          type === "beasiswa"
+            ? `/beasiswa/${formatTitleToUrl(title)}`
+            : `/lomba/${formatTitleToUrl(title)}`
+        }
       >
         <div className="flex flex-col gap-2">
           {/* Gambar tidak tersedia pada dataset */}

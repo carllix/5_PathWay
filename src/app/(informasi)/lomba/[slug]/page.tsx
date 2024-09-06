@@ -12,6 +12,7 @@ import { Lomba } from "../page";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
+import { formatTitleToUrl } from "../../components/Card";
 
 function formatDate(dateString: string) {
   // Memisahkan string tanggal dan membuat objek Date
@@ -29,10 +30,9 @@ function formatDate(dateString: string) {
 export default function DetailLomba() {
   const router = useRouter();
   const params = useParams();
+  const { slug } = params;
+
   const { data: session, status } = useSession();
-  // Menambahkan pengecekan tipe untuk memastikan params.slug adalah string
-  const title = Array.isArray(params.slug) ? params.slug[0] : params.slug;
-  const decodedTitle = decodeURIComponent(title);
 
   const [showModal, setShowModal] = useState<boolean>(false);
   const [lombaData, setLombaData] = useState<Lomba[]>([]);
@@ -71,7 +71,9 @@ export default function DetailLomba() {
       .catch((error) => console.error("Error fetching CSV file:", error));
   }, []);
 
-  const lomba = lombaData.find((lomba) => lomba.judul_lomba === decodedTitle);
+  const lomba = lombaData.find(
+    (lomba) => formatTitleToUrl(lomba.judul_lomba) === slug
+  );
 
   return (
     <div className="mt-28 px-4 sm:px-6 lg:px-10">
