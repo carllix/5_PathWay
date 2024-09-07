@@ -92,17 +92,12 @@ export default function DetailLomba() {
                 contactLink={`https://wa.me/${lomba.narahubung}`}
                 deadline={formatDate(lomba.deadline_pendaftaran)}
                 registrationLink={lomba.more_info}
-                registrationFee="Rp100.000"
+                registrationFee={lomba.biaya_pendaftaran}
                 level={lomba.tingkat}
                 category={lomba.bidang}
               />
               <Deskripsi
-                desc="Kompetisi ini adalah ajang bagi peserta untuk merancang dan
-        mempresentasikan model bisnis inovatif dengan menghadirkan ide-ide
-        kreatif yang dapat diimplementasikan di dunia nyata. Peserta akan
-        melalui beberapa tahap simulasi yang dirancang untuk menguji kemampuan
-        mereka dalam berbagai aspek bisnis, seperti analisis pasar, pengembangan
-        produk, strategi pemasaran, dan manajemen keuangan."
+                desc={lomba.deskripsi}
                 onButtonClick={openModal}
               />
             </div>

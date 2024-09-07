@@ -18,6 +18,8 @@ export interface Lomba {
   tingkat: string;
   lembaga_penyelenggara: string;
   narahubung: string;
+  deskripsi: string;
+  biaya_pendaftaran: string;
 }
 
 export default function Lomba() {
@@ -114,7 +116,7 @@ export default function Lomba() {
               key={index}
               title={lomba.judul_lomba}
               type="lomba"
-              description="Deskripsi tidak tersedia satu dua tiga empat lima enam tujuh delapan sembilan sepuluh fuck you love yeay huhuhu hehehehe hohohoho yeayyy"
+              description={lomba.deskripsi}
               imageUrl="/default_lomba.jpg"
             />
           ))}
