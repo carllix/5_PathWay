@@ -12,6 +12,9 @@
 ## Description
 PathWay adalah platform digital yang dirancang khusus untuk memenuhi kebutuhan mahasiswa dalam mencari informasi penting secara efisien. Kami memahami betapa pentingnya akses terhadap informasi yang akurat dan terpusat, terutama terkait lomba, beasiswa, dan peluang lainnya yang dapat mendukung perjalanan akademik dan karier mahasiswa.
 
+## Our Design
+You can view our product design here: [UI/UX PathWay](https://www.figma.com/design/kMmKd0qZefcR8vuVvpLIkq/Milestone-SPARTA?node-id=0-1&t=Rh7239TIMCCG2krN-1)
+
 ## Framework and Tools Used
 - **Next.js**: a react framework for building full-stack web applications.
 - **Tailwind CSS**: a utility-first CSS framework for rapidly designing custom user interfaces.
