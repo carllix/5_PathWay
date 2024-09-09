@@ -3,10 +3,11 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
-interface dataLomba {
+interface Data {
   title: string;
   user_email: string;
-  category: string;
+  category?: string;
+  total_uang?: string;
   deadline: string;
 }
 
@@ -14,23 +15,37 @@ export default function BookmarkButton({
   title,
   user_email,
   category,
+  total_uang,
   deadline,
-}: dataLomba) {
+}: Data) {
   const [isCreated, setIsCreated] = useState(false);
 
   const handleBookmark = async (event: { preventDefault: () => void }) => {
     event.preventDefault();
 
-    const data = { title, user_email, category, deadline };
-    const response = await fetch("/api/bookmark/lomba", {
+    // Determine the endpoint and create the data object based on the presence of category or total_uang
+    const isLomba = !!category;
+    const endpoint = isLomba ? "/api/bookmark/lomba" : "/api/bookmark/beasiswa";
+
+    const data = {
+      title,
+      user_email,
+      deadline,
+      ...(isLomba ? { category } : { total_uang }),
+    };
+
+    const response = await fetch(endpoint, {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify(data),
     });
 
     const bookmark = await response.json();
-   if (bookmark.isCreated) {
-     setIsCreated(true);
-   }
+    if (bookmark.isCreated) {
+      setIsCreated(true);
+    }
   };
 
   return (

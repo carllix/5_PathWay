@@ -48,6 +48,7 @@ export default function DetailLomba() {
 
   const [showModal, setShowModal] = useState<boolean>(false);
   const [lombaData, setLombaData] = useState<Lomba[]>([]);
+  const [isBookmarked, setIsBookmarked] = useState<boolean>(false);
 
   const openModal = () => {
     setShowModal(true);
@@ -87,7 +88,18 @@ export default function DetailLomba() {
     (lomba) => formatTitleToUrl(lomba.judul_lomba) === slug
   );
 
-  
+  useEffect(() => {
+    if (session && lomba) {
+      fetch(
+        `/api/bookmark/lomba/check?user_email=${session.user?.email}&title=${lomba.judul_lomba}`
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          setIsBookmarked(data.exists);
+        })
+        .catch((err) => console.error("Error checking bookmark:", err));
+    }
+  }, [session, lomba]);
 
   return (
     <div className="mt-28 px-4 sm:px-6 lg:px-10">
@@ -95,7 +107,7 @@ export default function DetailLomba() {
         <Image src="/back.svg" alt="back" width={20} height={20} />
         Kembali
       </button>
-      {lomba && session && (
+      {lomba && session && !isBookmarked && (
         <div className="flex justify-end mt-10 mb-5">
           <BookmarkButton
             title={lomba.judul_lomba}
