@@ -19,3 +19,23 @@ model User {
   email    String @unique
   password String
 }
+
+model BookmarkLomba {
+  id Int @id @default(autoincrement())
+  title String
+  user_email String
+  category String
+  deadline DateTime
+
+  @@unique([user_email,title])
+}
+
+model BookmarkBeasiswa {
+  id Int @id @default(autoincrement())
+  title String
+  user_email String
+  total_uang String
+  deadline DateTime
+
+  @@unique([user_email,title])
+}

@@ -83,6 +83,18 @@ export default function NavbarComponent() {
               Tentang Kita
             </Link>
 
+            {/* Conditional Bookmark */}
+            {session && (
+              <Link
+                href="/bookmark"
+                className={`text-gray-800 hover:text-gray-600 ${
+                  pathname === "/bookmark" ? "font-bold" : ""
+                }`}
+              >
+                Bookmark Saya
+              </Link>
+            )}
+
             {/* Conditional Sign In/Sign Out Button */}
             {session ? (
               <Button
@@ -147,16 +159,29 @@ export default function NavbarComponent() {
           >
             Tentang Kita
           </Link>
+
+          {/* Conditional Bookmark */}
+          {session && (
+            <Link
+              href="/bookmark"
+              className={`py-2 text-gray-800 hover:text-gray-600 ${
+                pathname === "/bookmark" ? "font-bold" : ""
+              }`}
+            >
+              Bookmark Saya
+            </Link>
+          )}
+
           {/* Conditional Sign In/Sign Out Button */}
           {session ? (
             <Button
               onClick={() => signOut()}
-              className="h-8 w-24 bg-red-600 hover:bg-red-800"
+              className="py-2 h-8 w-24 bg-red-600 hover:bg-red-800"
             >
               Sign Out
             </Button>
           ) : (
-            <Button onClick={() => signIn()} className="h-8 w-24">
+            <Button onClick={() => signIn()} className="py-2 h-8 w-24">
               Log In
             </Button>
           )}
