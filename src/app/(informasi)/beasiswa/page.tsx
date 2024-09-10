@@ -120,6 +120,7 @@ export default function Beasiswa() {
             <Card
               key={index}
               title={beasiswa.judul_beasiswa}
+              deadline={beasiswa.deadline_pendaftaran}
               type="beasiswa"
               description={beasiswa.deskripsi}
               imageUrl="/default_beasiswa.jpg"

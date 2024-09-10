@@ -115,6 +115,7 @@ export default function Lomba() {
             <Card
               key={index}
               title={lomba.judul_lomba}
+              deadline={lomba.deadline_pendaftaran}
               type="lomba"
               description={lomba.deskripsi}
               imageUrl="/default_lomba.jpg"

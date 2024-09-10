@@ -7,11 +7,13 @@ export function formatTitleToUrl(title: string): string {
 
 export default function Card({
   title,
+  deadline,
   description,
   type,
   imageUrl,
 }: {
   title: string;
+  deadline: string;
   description: string;
   type: string;
   imageUrl: string;
@@ -35,6 +37,10 @@ export default function Card({
             className="rounded-xl w-full h-80"
           />
           <p className="font-bold">{title}</p>
+          <div className="flex flex-row gap-2">
+            <p className="">Batas Pendaftaran : </p>
+            <p className="font-bold">{deadline}</p>
+          </div>
           <p className="text-justify text-xs sm:text-sm ">
             {" "}
             {description.split(" ").length > 20
