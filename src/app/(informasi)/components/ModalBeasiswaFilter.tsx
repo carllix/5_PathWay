@@ -52,7 +52,7 @@ export default function ModalLombaFilter({
   return (
     <div className="absolute top-24 left-1/2 -translate-x-1/2 w-4/5 max-w-sm bg-[#F0D78C] p-4 rounded-2xl text-xs">
       <Tingkat
-        title="Bidang"
+        title="Tingkat"
         values={tingkat}
         selectedValues={selectedTingkat}
         toggleValue={toggleSelection}
