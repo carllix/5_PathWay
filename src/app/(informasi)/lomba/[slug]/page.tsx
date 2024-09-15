@@ -137,7 +137,7 @@ export default function DetailLomba() {
           </div>
 
           {/* Forum Diskusi */}
-          <h1 className="font-extrabold text-xl mt-10">Forum Diskusi</h1>
+          {/* <h1 className="font-extrabold text-xl mt-10">Forum Diskusi</h1>
           {status === "authenticated" ? (
             <Diskusi />
           ) : (
@@ -148,7 +148,7 @@ export default function DetailLomba() {
                 Login
               </Link>
             </p>
-          )}
+          )} */}
 
           {showModal && (
             <div>
